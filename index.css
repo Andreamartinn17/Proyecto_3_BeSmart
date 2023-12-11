@@ -31,7 +31,7 @@ body{
     
 }
 
-.logo{
+.logo-in-main{
     width: 60%;
 }
 
@@ -69,7 +69,7 @@ body{
     align-self: center;
 }
 
-button{
+.button-main-with-video{
     color:white;
     background-image: linear-gradient(
         150deg,
