@@ -173,3 +173,84 @@ p {
     z-index: 1;
     transition: all ease-in-out .3s
 }
+/*FOOTER-ANDREA
+-------------------------*/
+.footer-general {
+    color: white;
+}
+.first-footer {
+    background-color: #33758A;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 23px 49px 0px 109px;
+	gap: 100px
+}
+.contact-footer {
+}
+.h3-hablamos {
+	font-size: 48px;
+	width: 508px;
+	height: 184px;
+}
+.email-footer {
+	width: 294px;
+	height: 18px;
+	font-size: 24px;
+}
+.phone-footer {
+	font-size: 24px;
+}
+.form-footer {
+	display: flex;
+	flex-direction: column;
+	display: block;
+    margin-bottom: 20px
+}
+.form-tittle {
+	width: 536px;
+	height: 62px;
+	font-size: 40px;
+}
+.label-footer{
+	width: 306px;
+	height: 39px;
+}
+.input-footer{
+	width: 482px;
+	height: 32px;
+}
+.accept-conditions {
+
+}
+.btn-submit-footer {
+	
+}
+/*Second footer
+-------------------
+*/
+.second-footer {
+    background-color: #2f4858;
+}
+.logo-footer {
+	
+}
+.rrss-footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 60px;
+}
+.pymes-footer {
+}
+/*final footer
+----------------
+*/
+.final-footer {
+    background-color: #2f4858;
+}
+}
+.line-footer {
+}
+.copy-footer {
+}
