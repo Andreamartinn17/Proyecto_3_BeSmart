@@ -31,6 +31,10 @@ body{
     
 }
 
+.logo{
+    width: 60%;
+}
+
 .h_1{
     color:white;
     align-self: center;
@@ -103,7 +107,7 @@ body {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
-    margin: 10%; 
+    margin-top: 15%;
     /* Agrega scroll-snap para el desplazamiento suave */
 }
 
