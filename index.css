@@ -154,7 +154,7 @@ width: 10px;
     text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
 }
 
-p {
+.descriptionright {
     padding: 25px;
     background-attachment: fixed;
     background-color: #A8201A;
@@ -165,8 +165,6 @@ p {
     max-width: 550px;
     min-width: 300px;
     opacity: 0.8;
-    position: relative;
-    z-index: 1;
     transition: all ease-in-out .3s
 }
 /*FOOTER-ANDREA
