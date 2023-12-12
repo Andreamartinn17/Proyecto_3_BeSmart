@@ -227,8 +227,9 @@ p {
 .accept-conditions {
 
 }
-.btn-submit-footer {
-	
+
+.btn-form-footer{
+
 }
 /*Second footer
 -------------------
@@ -239,13 +240,23 @@ p {
 .logo-footer {
 	
 }
+.img-logo-footer{
+
+}
+
 .rrss-footer {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
 	gap: 60px;
 }
+.images-rrss{
+    
+}
 .pymes-footer {
+}
+.pymes-image{
+
 }
 /*final footer
 ----------------
@@ -258,5 +269,5 @@ p {
 .copy-footer {
 }
 .p-final-footer{
-    
+
 }
