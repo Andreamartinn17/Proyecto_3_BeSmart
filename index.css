@@ -96,15 +96,15 @@ body{
 
 /* rama team */
 .team {
+    object-fit: cover;
+    z-index: -1;
     width:100%;
     height: 100%;
     object-fit: cover;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
-    margin-top: 250px;
-    flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
-    height: 100vh; /* Establece la altura para ocupar toda la pantalla verticalmente */
+    margin-top: 250px; 
     /* Agrega scroll-snap para el desplazamiento suave */
 }
 
@@ -113,7 +113,7 @@ body{
     flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
     height: 100vh; /* Establece la altura para ocupar toda la pantalla verticalmente */
     scroll-snap-align: start;
-    margin: 50px;
+    margin-top: 50px;
 }
 
 flex a img {
