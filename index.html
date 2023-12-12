@@ -1,35 +1,46 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeSmart</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Main_section</title>
 </head>
 <body>
+    <section class="main-with-video">
     <video autoplay muted loop class="video_main">
         <source src="imagenes/vídeo_main.mp4" type="video/mp4">
     </video>
     <section class="flexbox-container">
-        <div class="logo">
+        <div class="logo-in-main">
             <img src="imagenes/logo_mini_yellow2.png" alt="logo be smart">
         </div>
-        <div class="h_1">
+         <div class="h_1">
             SOLUCIONES TECNOLÓGICAS
         </div>
         <div class="h_2">
             Tu negocio local a grande escala.
         </div>
         <div class="contacta_button">
-            <button>Contacta con nosotros ></button>
+            <button class="button-main-with-video">Contacta con nosotros ></button>
         </div>
+       </section>
+
+       <!-- TEAM SECTION-->
         <section class="team">
             <!--proyectowner-->
             <article class="content">
                      <div class="heyim">
-                           <h1>HELLO IM KRISTI</h1>      
+                           <h1>HELLO IM KRISTY</h1>      
                      </div>
             <div class="flex">
-                <img src="./team_file/img_team/projectowner.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
+                <img src="./img_team/projectowner.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
             <div class="content1">
                 <aside class="profession">
                    <h2>PROJECT OWNER</h2>      
@@ -124,9 +135,204 @@
             </div>
             </article>
         </section>
+    <!-- Enlace a la fuente de iconos Remix -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Título de la página -->
+    <title>BeSmart</title>
+</head>
+<body>
+     <div class="content-container">
+    <!-- Encabezado (Header) -->
+    <header class="header">
+        <!-- Navegación principal -->
+        <nav class="nav container">
+            <!-- Logotipo e icono en la navegación -->
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <i class="ri-code-s-slash-line"></i> <img src="./img/be_smart_sinfondo 1.png" alt="icono" id="header-icono">
+                </a>
+
+                <!-- Botón de menú para dispositivos móviles -->
+                <div class="nav__toggle" id="nav-toggle"> mn
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!-- Elemento de menú vacío -->
+                    <li>
+                        <a href="#" class="nav__link"></a>
+                    </li>
+
+                    <!-- Desplegable 1 (Servicios) -->
+                    <li class="dropdown__item">                      
+                        <div class="nav__link dropdown__button">
+                           Servicios <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <!-- Icono y título del desplegable -->
+                                    <div class="dropdown__icon">
+                                        <i class="ri-flashlight-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Servicios</span>
+
+                                    <!-- Lista de servicios -->
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Servicio 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Servicio 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Servicio 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Desplegable 2 (Equipo) -->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Equipo <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <!-- Icono y título del desplegable -->
+                                    <div class="dropdown__icon">
+                                        <i class="ri-code-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Equipo</span>
+
+                                    <!-- Lista de integrantes del equipo -->
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Integrante 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Integrante 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Integrante 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Elementos de menú adicionales -->
+                    <li>
+                        <a href="#" class="nav__link">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Presupuesto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="boton-contacto"><h6>Contacto</h6></a>
+                    </li>
+
+                    <!-- Contenedor de elementos adicionales (países) -->
+                    <div class="menu-container">
+                        <!-- Elemento de menú con imagen (España) -->
+                        <div class="menu-item">
+                            <span></span>
+                            <div class="submenu">
+                                <img src="./img/españa.png" alt="Imagen 1" id="icono-pais">
+                            </div>
+                        </div>
+                        
+                        <!-- Elemento de menú con imágenes de países -->
+                        <div class="menu-item nav__link">
+                            <span></span>
+                            <div class="paises-container">
+                                <img src="./img/españa.png" alt="Imagen 1" id="icono-pais">
+                                <img src="./img/italia.png" alt="Imagen 2" id="icono-pais">
+                                <img src="./img/portugal.png" alt="Imagen 3" id="icono-pais">
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
-    <footer>
-        
+    <!-- Script de JavaScript -->
+    <script src="./js.js"></script>
+    <footer class="footer-general">
+        <section class="first-footer">
+            <div class="contact-footer">
+                <h3 class="h3-hablamos">Estás a un solo click de mejorar tu comercio online. ¿Hablamos?</h3>
+                <p class="email-footer">hello@besmart.es</p>
+                <p class="phone-footer">900 123 456</p>
+            </div>
+            <div class="form-footer">
+                <h4 class="form-tittle">Te contactamos</h4>
+                <form action="/procesar_formulario" method="post">
+                    <!-- Campo Nombre y Apellidos -->
+                    <label for="nombre_apellidos">Nombre y Apellidos*</label>
+                    <input type="text" id="nombre_apellidos" name="nombre_apellidos" required>
+                    <br>
+                
+                    <!-- Campo Email -->
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                
+                    <!-- Campo Teléfono -->
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required> 
+                    <br>
+                </form>
+                <label class="accept-conditions">
+                    <input type="checkbox" id="aceptar_terminos" name="aceptar_terminos">
+                    He leído y aceptado la política de privacidad
+                    </label>
+                    <button type="submit-form">Enviar Formulario</button>
+            </div>
+        </section>
+        <section class="second-footer">
+            <div class="logo-footer">
+                <img src="be_smart_yellow_2.png" alt="logo" width=""/>
+            </div>
+            <div class="rrss-footer">
+                <a href="https://www.linkedin.com/">
+                <img src="LinkedIn's-Logo.png" alt="linkedin" width="40">
+                </a>
+                <a href="https://www.facebook.com/?locale=es_ES">
+                <img src="Facebook's-Logo.png" alt="facebook" width="40">
+                </a>
+                <a href="https://www.instagram.com/">
+                <img src="Instagram's-Logo.png" alt="instagram" width="40">
+                </a>
+            </div>
+            <div class="pymes-footer">
+                <img src="pyme-logo.png" alt="pyme" width="">
+            </div>
+        </section>
+        <section class="final-footer">
+            <div class="line-footer">
+            </div>
+            <div class="copy-footer">
+                <p class="p-final-footer"><u>©2023 BeSmart</u> | <u>Aviso legal</u> | <u>Política de Privacidad</u> | <u>Política de cookies</u></p>
+            </div>
+        </section> 
     </footer>
 </body>
 </html>

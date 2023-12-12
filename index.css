@@ -31,6 +31,10 @@ body{
     
 }
 
+.logo-in-main{
+    width: 60%;
+}
+
 .h_1{
     color:white;
     align-self: center;
@@ -65,7 +69,7 @@ body{
     align-self: center;
 }
 
-button{
+.button-main-with-video{
     color:white;
     background-image: linear-gradient(
         150deg,
@@ -91,19 +95,14 @@ button{
 }
 
 /* rama team */
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    margin: 0; 
-    /* Elimina el margen predeterminado del cuerpo del documento */
-}
-
 .team {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
-    margin: 0; 
+    margin: 250px; 
     /* Agrega scroll-snap para el desplazamiento suave */
 }
 
@@ -112,12 +111,11 @@ body {
     flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
     height: 100vh; /* Establece la altura para ocupar toda la pantalla verticalmente */
     scroll-snap-align: start;
-    margin: 0;
+    margin: 50px;
 }
 
 img {
-    max-width: 70%;
-    width: 33%;
+margin-top: 20px;
 }
 
 .content {
@@ -128,15 +126,13 @@ img {
 
 .heyim {
     margin-top: 100px;
-    margin-left: 40px;
     font-size: 25px;
     text-align: center; 
     font-weight: bold; 
     color: #A8201A; 
     text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-    width: 33%;
     float: left;
-}
+} 
 
 .content1 {
     display: grid;
@@ -172,4 +168,87 @@ p {
     position: relative;
     z-index: 1;
     transition: all ease-in-out .3s
+}
+/*FOOTER-ANDREA
+-------------------------*/
+.footer-general {
+    color: white;
+}
+.first-footer {
+    background-color: #33758A;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 23px 49px 0px 109px;
+	gap: 100px
+}
+.contact-footer {
+}
+.h3-hablamos {
+	font-size: 48px;
+	width: 508px;
+	height: 184px;
+}
+.email-footer {
+	width: 294px;
+	height: 18px;
+	font-size: 24px;
+}
+.phone-footer {
+	font-size: 24px;
+}
+.form-footer {
+	display: flex;
+	flex-direction: column;
+	display: block;
+    margin-bottom: 20px
+}
+.form-tittle {
+	width: 536px;
+	height: 62px;
+	font-size: 40px;
+}
+.label-footer{
+	width: 306px;
+	height: 39px;
+}
+.input-footer{
+	width: 482px;
+	height: 32px;
+}
+.accept-conditions {
+
+}
+.btn-submit-footer {
+	
+}
+/*Second footer
+-------------------
+*/
+.second-footer {
+    background-color: #2f4858;
+}
+.logo-footer {
+	
+}
+.rrss-footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 60px;
+}
+.pymes-footer {
+}
+/*final footer
+----------------
+*/
+.final-footer {
+    background-color: #2f4858;
+}
+.line-footer {
+}
+.copy-footer {
+}
+.p-final-footer{
+    
 }
