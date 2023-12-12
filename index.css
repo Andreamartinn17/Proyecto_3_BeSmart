@@ -102,7 +102,9 @@ body{
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
-    margin: 250px; 
+    margin-top: 250px;
+    flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
+    height: 100vh; /* Establece la altura para ocupar toda la pantalla verticalmente */
     /* Agrega scroll-snap para el desplazamiento suave */
 }
 
@@ -120,8 +122,6 @@ width: 10px;
 
 .content {
     display: flex;
-    width: fit-content;
-    height: fit-content;
 }
 
 .heyim {
