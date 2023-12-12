@@ -1,6 +1,9 @@
 <!DOCTYPE html> 
 <html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -15,7 +18,7 @@
         <source src="imagenes/vídeo_main.mp4" type="video/mp4">
     </video>
     <section class="flexbox-container">
-        <div class="logo">
+        <div class="logo-in-main">
             <img src="imagenes/logo_mini_yellow2.png" alt="logo be smart">
         </div>
          <div class="h_1">
@@ -25,7 +28,7 @@
             Tu negocio local a grande escala.
         </div>
         <div class="contacta_button">
-            <button>Contacta con nosotros ></button>
+            <button class="button-main-with-video">Contacta con nosotros ></button>
         </div>
        </section>
 
@@ -132,7 +135,146 @@
             </div>
             </article>
         </section>
+    <!-- Enlace a la fuente de iconos Remix -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Título de la página -->
+    <title>BeSmart</title>
+</head>
+<body>
+     <div class="content-container">
+    <!-- Encabezado (Header) -->
+    <header class="header">
+        <!-- Navegación principal -->
+        <nav class="nav container">
+            <!-- Logotipo e icono en la navegación -->
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <i class="ri-code-s-slash-line"></i> <img src="./img/be_smart_sinfondo 1.png" alt="icono" id="header-icono">
+                </a>
+
+                <!-- Botón de menú para dispositivos móviles -->
+                <div class="nav__toggle" id="nav-toggle"> mn
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!-- Elemento de menú vacío -->
+                    <li>
+                        <a href="#" class="nav__link"></a>
+                    </li>
+
+                    <!-- Desplegable 1 (Servicios) -->
+                    <li class="dropdown__item">                      
+                        <div class="nav__link dropdown__button">
+                           Servicios <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <!-- Icono y título del desplegable -->
+                                    <div class="dropdown__icon">
+                                        <i class="ri-flashlight-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Servicios</span>
+
+                                    <!-- Lista de servicios -->
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Servicio 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Servicio 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Servicio 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Desplegable 2 (Equipo) -->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Equipo <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <!-- Icono y título del desplegable -->
+                                    <div class="dropdown__icon">
+                                        <i class="ri-code-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Equipo</span>
+
+                                    <!-- Lista de integrantes del equipo -->
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Integrante 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Integrante 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Integrante 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Elementos de menú adicionales -->
+                    <li>
+                        <a href="#" class="nav__link">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Presupuesto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="boton-contacto"><h6>Contacto</h6></a>
+                    </li>
+
+                    <!-- Contenedor de elementos adicionales (países) -->
+                    <div class="menu-container">
+                        <!-- Elemento de menú con imagen (España) -->
+                        <div class="menu-item">
+                            <span></span>
+                            <div class="submenu">
+                                <img src="./img/españa.png" alt="Imagen 1" id="icono-pais">
+                            </div>
+                        </div>
+                        
+                        <!-- Elemento de menú con imágenes de países -->
+                        <div class="menu-item nav__link">
+                            <span></span>
+                            <div class="paises-container">
+                                <img src="./img/españa.png" alt="Imagen 1" id="icono-pais">
+                                <img src="./img/italia.png" alt="Imagen 2" id="icono-pais">
+                                <img src="./img/portugal.png" alt="Imagen 3" id="icono-pais">
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
+    <!-- Script de JavaScript -->
+    <script src="./js.js"></script>
     <footer class="footer-general">
         <section class="first-footer">
             <div class="contact-footer">
@@ -188,7 +330,7 @@
             <div class="line-footer">
             </div>
             <div class="copy-footer">
-                <p><u>©2023 BeSmart</u> | <u>Aviso legal</u> | <u>Política de Privacidad</u> | <u>Política de cookies</u></p>
+                <p class="p-final-footer"><u>©2023 BeSmart</u> | <u>Aviso legal</u> | <u>Política de Privacidad</u> | <u>Política de cookies</u></p>
             </div>
         </section> 
     </footer>

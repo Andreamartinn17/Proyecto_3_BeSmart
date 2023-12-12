@@ -31,6 +31,10 @@ body{
     
 }
 
+.logo-in-main{
+    width: 60%;
+}
+
 .h_1{
     color:white;
     align-self: center;
@@ -65,7 +69,7 @@ body{
     align-self: center;
 }
 
-button{
+.button-main-with-video{
     color:white;
     background-image: linear-gradient(
         150deg,
@@ -241,8 +245,10 @@ p {
 .final-footer {
     background-color: #2f4858;
 }
-}
 .line-footer {
 }
 .copy-footer {
+}
+.p-final-footer{
+    
 }
