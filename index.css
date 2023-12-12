@@ -114,8 +114,8 @@ body{
     margin: 50px;
 }
 
-img {
-margin-top: 20px;
+flex a img {
+width: 10px;
 }
 
 .content {
@@ -137,7 +137,7 @@ margin-top: 20px;
 .content1 {
     display: grid;
     padding: 25px;
-    width: 550px;
+    width: 50px;
 }
 
 .flex {
