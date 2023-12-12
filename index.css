@@ -1,0 +1,250 @@
+body{
+    background-color: beige;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.video_main{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.flexbox-container{
+    border:1px solid black;
+    background: rgba(10, 1, 65, 0.7);
+    padding: 45px;
+    width: 50%;
+    display:flex;
+    flex-direction:column;
+    margin: 0 auto;/*Para centrarlo*/
+    margin-top: 13%;
+}
+
+@media screen and (max-width:768px) {
+    .flexbox-container{
+        margin-top:30%;
+    }
+    
+}
+
+.logo-in-main{
+    width: 60%;
+}
+
+.h_1{
+    color:white;
+    align-self: center;
+    font-weight: bold;
+    font-size:35px;
+    margin-left: 13%;
+}
+
+@media screen and (max-width:768px) {
+    .h_1{
+        font-size: 25px;
+        margin-top: 10%;
+    }
+    
+}
+
+.h_2{
+    color: white;
+    align-self:flex-end;
+    margin-right: 4%;
+}
+
+@media screen and (max-width:768px) {
+    .h_2{
+        font-size: 15px;
+    }
+    
+}
+
+.contacta_button{
+    margin-top: 50px;
+    align-self: center;
+}
+
+.button-main-with-video{
+    color:white;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+    );
+    padding: 8px;
+    border-radius: 8px;
+    border:0;
+    font-weight: bold;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+@media screen and (max-width:768px) {
+     button{
+        font-size:11px;
+        padding:7px;
+        font-weight:semi-bold;
+    }
+    
+}
+
+/* rama team */
+.team {
+    background-color: white;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    margin-top: 250px; 
+    /* Agrega scroll-snap para el desplazamiento suave */
+}
+
+.team article {
+    flex: 0 0 auto; /* Asegura que el tamaño no se expanda ni se contraiga */
+    flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+}
+
+.heyim {
+    margin-top: 100px;
+    font-size: 25px;
+    text-align: center; 
+    font-weight: bold; 
+    color: #A8201A; 
+    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+} 
+
+.content1 {
+    display: grid;
+    padding: 50px;
+    width: 450px;
+    height: 450px;
+}
+
+.flex {
+    display: flex;
+}
+
+.profession {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-align: left; 
+    font-weight: bold; 
+    color: #A8201A; 
+    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+.descriptionright {
+    padding: 25px;
+    background-attachment: fixed;
+    background-color: #A8201A;
+    border-radius: 7px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
+    color: white;
+    line-height: 1.3em;
+    opacity: 0.8;
+}
+/*FOOTER-ANDREA
+-------------------------*/
+.footer-general {
+    color: white;
+}
+.first-footer {
+    background-color: #33758A;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 23px 49px 0px 109px;
+	gap: 100px
+}
+.contact-footer {
+}
+.h3-hablamos {
+	font-size: 48px;
+	width: 508px;
+	height: 184px;
+}
+.email-footer {
+	width: 294px;
+	height: 18px;
+	font-size: 24px;
+}
+.phone-footer {
+	font-size: 24px;
+}
+.form-footer {
+	display: flex;
+	flex-direction: column;
+	display: block;
+    margin-bottom: 20px
+}
+.form-tittle {
+	width: 536px;
+	height: 62px;
+	font-size: 40px;
+}
+.label-footer{
+	width: 306px;
+	height: 39px;
+}
+.input-footer{
+	width: 482px;
+	height: 32px;
+}
+.accept-conditions {
+
+}
+
+.btn-form-footer{
+
+}
+/*Second footer
+-------------------
+*/
+.second-footer {
+    background-color: #2f4858;
+}
+.logo-footer {
+	
+}
+.img-logo-footer{
+
+}
+
+.rrss-footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 60px;
+}
+.images-rrss{
+    
+}
+.pymes-footer {
+}
+.pymes-image{
+
+}
+/*final footer
+----------------
+*/
+.final-footer {
+    background-color: #2f4858;
+}
+.line-footer {
+}
+.copy-footer {
+}
+.p-final-footer{
+
+}
