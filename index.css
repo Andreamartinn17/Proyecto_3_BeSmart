@@ -91,19 +91,14 @@ button{
 }
 
 /* rama team */
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    margin: 0; 
-    /* Elimina el margen predeterminado del cuerpo del documento */
-}
-
 .team {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
-    margin: 0; 
+    margin: 250px; 
     /* Agrega scroll-snap para el desplazamiento suave */
 }
 
@@ -112,12 +107,11 @@ body {
     flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
     height: 100vh; /* Establece la altura para ocupar toda la pantalla verticalmente */
     scroll-snap-align: start;
-    margin: 0;
+    margin: 50px;
 }
 
 img {
-    max-width: 70%;
-    width: 33%;
+margin-top: 20px;
 }
 
 .content {
@@ -128,13 +122,11 @@ img {
 
 .heyim {
     margin-top: 100px;
-    margin-left: 40px;
     font-size: 25px;
     text-align: center; 
     font-weight: bold; 
     color: #A8201A; 
     text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-    width: 33%;
     float: left;
 }
 
