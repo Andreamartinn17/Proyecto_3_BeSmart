@@ -96,6 +96,7 @@ body{
 
 /* rama team */
 .team {
+    background-color: white;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
@@ -106,7 +107,6 @@ body{
 .team article {
     flex: 0 0 auto; /* Asegura que el tamaño no se expanda ni se contraiga */
     flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
-    scroll-snap-align: start;
     margin-top: 50px;
 }
 
@@ -121,7 +121,6 @@ body{
     font-weight: bold; 
     color: #A8201A; 
     text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-    float: left;
 } 
 
 .content1 {
