@@ -1,5 +1,4 @@
 body{
-    background-color: beige;
     font-family: 'Montserrat',sans-serif;
 }
 /* nav header  */
@@ -486,23 +485,18 @@ a {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-body {
-    background-color:  rgba(10, 1, 65, 0.7);
 }
 
 .titulo {
     text-align: center;
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 160px;
+    color:black;
+
 }
 
 .slider-box{
     width: 1280px;
-    height: auto;
     margin: 50px auto 0;
     overflow: hidden;
 }
@@ -552,10 +546,7 @@ body {
     100% { margin-left: -300%;}
 }
 /*Slider de los valores de empresa/*/
-
-
-
-
+/*CSS DE MAIN VIDEO*/
 .video_main{
     position:absolute;
     top:0;
