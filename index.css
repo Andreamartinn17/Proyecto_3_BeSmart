@@ -709,7 +709,7 @@ body {
 }
 
 .team {
-    animation: scroll 55s linear infinite;
+    animation: scroll 5s linear infinite;
 }
 
 @keyframes scroll {
