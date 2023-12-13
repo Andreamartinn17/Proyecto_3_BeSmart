@@ -490,7 +490,7 @@ a {
 .titulo {
     text-align: center;
     font-size: 40px;
-    padding-top: 160px;
+    padding-top: 180px;
     color:black;
 
 }
@@ -498,7 +498,7 @@ a {
 .slider-box{
     width: 1280px;
     margin: 50px auto 0;
-    margin-bottom: -100px; /*BORDE DE ABAJO DE LAS SLIDES DE VALORES*/
+    margin-bottom: -200px; /*BORDE DE ABAJO DE LAS SLIDES DE VALORES*/
     overflow: hidden;
 }
 
@@ -518,15 +518,26 @@ a {
 .content-valueslider{
     position:absolute;
     text-align: center;
-    padding: 0 250px;
+    padding: 0 20px;
     top: 200px;
     color:white;
+    border:1px solid black;
+    background: rgba(10, 1, 65, 0.7);
+    margin:0 90px ;
+
 }
 
 .content-valueslider h2{
     font-size: 45px;
     margin-bottom: 35px;
+    margin-top: 35px;
 } 
+
+.content-valueslider p{
+    font-size: px;
+    margin-bottom: 35px;
+} 
+
 
 .slider-box img{
     width: 100%;
@@ -616,18 +627,21 @@ a {
 
 .button-main-with-video{
     color:white;
-    background-image: linear-gradient(
-        150deg,
-        #9500ff,
-        #09f,
-        #00DDFF
-    );
+    background-color: #F6AE2D;
     padding: 8px;
     border-radius: 8px;
     border:0;
     font-weight: bold;
     font-size: 16px;
     cursor:pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.button-main-with-video:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @media screen and (max-width:768px) {
