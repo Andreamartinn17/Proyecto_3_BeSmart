@@ -212,9 +212,7 @@ body{
 .input-footer{
 	width: 482px;
 	height: 32px;
-<<<<<<< HEAD
 }/*Second footer
-=======
 }
 .accept-conditions {
 
@@ -224,21 +222,12 @@ body{
 
 }
 /*Second footer
->>>>>>> 974027b14188bbab333d12a952afc381452946ab
 -------------------
 */
 .second-footer {
     background-color: #2f4858;
 }
-<<<<<<< HEAD
-=======
-.logo-footer {
-	
-}
-.img-logo-footer{
 
-}
->>>>>>> 974027b14188bbab333d12a952afc381452946ab
 
 .rrss-footer {
 	display: flex;
@@ -246,31 +235,10 @@ body{
 	align-items: flex-start;
 	gap: 60px;
 }
-<<<<<<< HEAD
 
-=======
-.images-rrss{
-    
-}
-.pymes-footer {
-}
-.pymes-image{
-
-}
->>>>>>> 974027b14188bbab333d12a952afc381452946ab
 /*final footer
 ----------------
 */
 .final-footer {
     background-color: #2f4858;
 }
-<<<<<<< HEAD
-=======
-.line-footer {
-}
-.copy-footer {
-}
-.p-final-footer{
-
-}
->>>>>>> 974027b14188bbab333d12a952afc381452946ab
