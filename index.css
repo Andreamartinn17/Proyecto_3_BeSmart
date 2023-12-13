@@ -96,11 +96,8 @@ body{
 
 /* rama team */
 .team {
-    background-color: white;
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: mandatory;
-    margin-top: 250px; 
+    margin-top: 20px; 
     /* Agrega scroll-snap para el desplazamiento suave */
 }
 
@@ -112,6 +109,7 @@ body{
 
 .content {
     display: flex;
+    background-color: white;
 }
 
 .heyim {
@@ -126,8 +124,6 @@ body{
 .content1 {
     display: grid;
     padding: 50px;
-    width: 450px;
-    height: 450px;
 }
 
 .flex {
@@ -153,6 +149,23 @@ body{
     color: white;
     line-height: 1.3em;
     opacity: 0.8;
+}
+
+.team {
+    white-space: nowrap;
+}
+
+.team {
+    animation: scroll 55s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 /*FOOTER-ANDREA
 -------------------------*/
