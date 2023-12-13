@@ -27,7 +27,6 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #33658A;
   color: var(--text-color);
 }
 
@@ -58,33 +57,64 @@ a {
 
 /* Estilos del logotipo en el encabezado */
 #header-icono{
-  height: 70px;
-  width: 220px;
+  height: 80px;
+  width: 350px;
   margin-left: -18%;
 }
 
 /* Estilos para el desplegable de países */
-.menu-item:hover .paises-container {
-  display: block;
+
+.fondo-paises{
+  margin-right: -120px;
 }
 
 
+#bandera-principal{
+  height: 20px;
+  width: max-content;
+}
 
-.paises-container {
+#tamaño-paises{
+  height: 20px;
+  width: 30px;
+  margin-top: 2px;
+}
+
+.fondo-paises ul {
+  display: block;
+  list-style: none;
+}
+.fondo-paises a {
+  display: block;
+  padding: 5px 5px 5px 5px;
+  background-color: none;
+  text-decoration: none;
+  color: #191C26;
+  height: 30px;
+  width: 50px;
+  background-color: #F6AE2D;
+  border-radius: 3px;
+}
+
+.fondo-paises  a:hover {
+  background-color: rgba(246, 174, 45, 0.5);
+  height: 30px;
+  width: 50px;
+}
+.fondo-paises ul li {
+  position: relative;
+}
+.fondo-paises ul li ul {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1;
 }
-
-.nav__link:hover .submenu .paises-container {
+.fondo-paises ul li a:hover + ul, .fondo-paises  ul li ul:hover {
   display: block;
 }
+
+
 
 /* Estilos para el botón de contacto */
 .boton-contacto {
@@ -104,7 +134,8 @@ a {
   margin-top: 5%;
 }
 .boton-contacto:hover {
-  background-color: #c0392b; /* Cambia el color al pasar el cursor */
+  background-color: rgba(51, 101, 138, 0.8);/* Cambia el color al pasar el cursor */
+  color: black;
 }
 
 /* Icono de país en el menú */
