@@ -178,7 +178,8 @@ width: 10px;
 	justify-content: space-around;
 	align-items: flex-start;
 	padding: 23px 49px 0px 109px;
-	gap: 100px
+	gap: 100px;
+    min-height: 500px
 }
 .contact-footer {
 }
