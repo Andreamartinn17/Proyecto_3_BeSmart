@@ -498,6 +498,7 @@ a {
 .slider-box{
     width: 1280px;
     margin: 50px auto 0;
+    margin-bottom: -100px; /*BORDE DE ABAJO DE LAS SLIDES DE VALORES*/
     overflow: hidden;
 }
 
