@@ -180,8 +180,7 @@ body{
 	padding: 23px 49px 0px 109px;
 	gap: 100px
 }
-.contact-footer {
-}
+
 .h3-hablamos {
 	font-size: 48px;
 	width: 508px;
@@ -213,6 +212,7 @@ body{
 .input-footer{
 	width: 482px;
 	height: 32px;
+}/*Second footer
 }
 .accept-conditions {
 
@@ -227,12 +227,7 @@ body{
 .second-footer {
     background-color: #2f4858;
 }
-.logo-footer {
-	
-}
-.img-logo-footer{
 
-}
 
 .rrss-footer {
 	display: flex;
@@ -240,24 +235,10 @@ body{
 	align-items: flex-start;
 	gap: 60px;
 }
-.images-rrss{
-    
-}
-.pymes-footer {
-}
-.pymes-image{
 
-}
 /*final footer
 ----------------
 */
 .final-footer {
     background-color: #2f4858;
-}
-.line-footer {
-}
-.copy-footer {
-}
-.p-final-footer{
-
 }
