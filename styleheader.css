@@ -27,7 +27,6 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #33658A;
   color: var(--text-color);
 }
 
