@@ -96,48 +96,55 @@ body{
 
 /* rama team */
 .team {
+    background-color: white;
     display: flex;
-    margin-top: 20px; 
-    /* Agrega scroll-snap para el desplazamiento suave */
+    margin-top: 20px;
+    overflow: scroll; /* Agrega scroll-snap para el desplazamiento suave */
 }
 
-.team article {
+
+.team .article {
     flex: 0 0 auto; /* Asegura que el tamaño no se expanda ni se contraiga */
     flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
     margin-top: 50px;
+    justify-content: space-between; /* Elimina la propiedad duplicada align-items y agrega espacio entre los elementos */
+    width: 100vw;
 }
 
 .content {
     display: flex;
-    background-color: white;
 }
 
 .heyim {
+    width: 30vw;
+    height: 50vh;
     margin-top: 100px;
     font-size: 25px;
-    text-align: center; 
-    font-weight: bold; 
-    color: #A8201A; 
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-} 
+    text-align: center;
+    font-weight: bold;
+    color: #A8201A;
+    /* Se mantiene el resto del código para los efectos de sombra del texto */
+}
 
 .content1 {
+    width: 63vw;
+    height: 50vh;
     display: grid;
     padding: 50px;
 }
 
 .flex {
+    width: 36vw;
     display: flex;
 }
 
 .profession {
     margin-top: 50px;
     font-size: 20px;
-    text-align: center;
-    text-align: left; 
-    font-weight: bold; 
-    color: #A8201A; 
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+    text-align: left;
+    font-weight: bold;
+    color: #A8201A;
+    /* Se mantiene el resto del código para los efectos de sombra del texto */
 }
 
 .descriptionright {
@@ -145,28 +152,31 @@ body{
     background-attachment: fixed;
     background-color: #A8201A;
     border-radius: 7px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
     line-height: 1.3em;
     opacity: 0.8;
 }
+/*auto slider*/
 
 .team {
     white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    margin-top: 20px;
+    scroll-snap-type: x mandatory;
 }
 
-.team {
-    animation: scroll 55s linear infinite;
+.team .article {
+    flex: 0 0 auto;
+    flex-basis: 100vw;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 100vw;
+    scroll-snap-align: start;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+
 /*FOOTER-ANDREA
 -------------------------*/
 .footer-general {

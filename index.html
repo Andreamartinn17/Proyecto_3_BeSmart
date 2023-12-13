@@ -31,110 +31,137 @@
             <button class="button-main-with-video">Contacta con nosotros ></button>
         </div>
        </section>
-
        <!-- TEAM SECTION-->
-        <section class="team">
-            <!--proyectowner-->
-            <article class="content">
-                     <div class="heyim">
-                           <h1>HELLO IM KRISTY</h1>      
-                     </div>
+       <script>
+        // Función para realizar un scroll automático
+        function autoScroll() {
+            const teamContainer = document.querySelector('.team');
+            const scrollAmount = 300; // Ajusta la velocidad del scroll según sea necesario
+
+            // Mueve el scroll horizontalmente
+            teamContainer.scrollLeft += scrollAmount;
+
+            // Si alcanza el final, reinicia al principio
+            if (teamContainer.scrollLeft >= teamContainer.scrollWidth - teamContainer.clientWidth) {
+                teamContainer.scrollLeft = 0;
+            }
+        }
+
+        // Configura un intervalo para llamar a la función de scroll automático
+        setInterval(autoScroll, 4000); // Ajusta el intervalo según sea necesario (en milisegundos)
+    </script>
+<!-- Contenido de la sección del equipo -->
+<section class="team">
+    <!-- Miembro 1 - Project Owner -->
+    <span>
+        <article class="content">
+            <div class="heyim">
+                <h1>HELLO IM KRISTY</h1>
+            </div>
             <div class="flex">
-                <img src="./img_team/projectowner.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
-            <div class="content1">
-                <aside class="profession">
-                   <h2>PROJECT OWNER</h2>      
-                </aside>
-                <aside class="descriptionright">
-                    <p>
-                Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo.
-                ¡Es como jugar al tetris con requisitos y funcionalidades!
-                    </p>
-                </aside>
+                <img class="teampicture" src="./img_team/projectowner.png" alt="Imagen Project Owner">
+                <div class="content1">
+                    <aside class="profession">
+                        <h2>PROJECT OWNER</h2>
+                    </aside>
+                    <aside class="descriptionright">
+                        <p>
+                            Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo. ¡Es como jugar al tetris con requisitos y funcionalidades!
+                        </p>
+                    </aside>
+                </div>
             </div>
+        </article>
+    </span>
+
+    <!-- Miembro 2 - Scrum Master -->
+    <span>
+        <article class="content">
+            <div class="heyim">
+                <h1>HELLO IM ANDREA</h1>
             </div>
-            </article>
-        <!--Scrum master-->        
-            <article class="content">
-                     <div class="heyim">
-                           <h1>HELLO IM ANDREA</h1>      
-                     </div>
             <div class="flex">
-                <img src="./img_team/scrummaster.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
-            <div class="content1">
-                <aside class="profession">
-                   <h2>SCRUM MASTER</h2>      
-                </aside>
-                <aside class="descriptionright">
-                    <p>
-                Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo.
-                ¡Es como jugar al tetris con requisitos y funcionalidades!
-                    </p>
-                </aside>
+                <img class="teampicture" src="./img_team/scrummaster.png" alt="Imagen Scrum Master">
+                <div class="content1">
+                    <aside class="profession">
+                        <h2>SCRUM MASTER</h2>
+                    </aside>
+                    <aside class="descriptionright">
+                        <p>
+                            Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo. ¡Es como jugar al tetris con requisitos y funcionalidades!
+                        </p>
+                    </aside>
+                </div>
             </div>
+        </article>
+    </span>
+
+    <!-- Miembro 3 - Diseñador Gráfico -->
+    <span>
+        <article class="content">
+            <div class="heyim">
+                <h1>HELLO IM ANTONIA</h1>
             </div>
-            </article>
-            <!--Diseñador gráfico-->
-            <article class="content">
-                     <div class="heyim">
-                           <h1>HELLO IM ANTONIA</h1>      
-                     </div>
             <div class="flex">
-                <img src="./img_team/diseñográfico.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
-            <div class="content1">
-                <aside class="profession">
-                   <h2>DISEÑADORA GRÁFICA</h2>      
-                </aside>
-                <aside class="descriptionright">
-                    <p>
-                Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo.
-                ¡Es como jugar al tetris con requisitos y funcionalidades!
-                    </p>
-                </aside>
+                <img class="teampicture" src="./img_team/diseñográfico.png" alt="Imagen Diseñador Gráfico">
+                <div class="content1">
+                    <aside class="profession">
+                        <h2>DISEÑADOR GRÁFICO</h2>
+                    </aside>
+                    <aside class="descriptionright">
+                        <p>
+                            Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo. ¡Es como jugar al tetris con requisitos y funcionalidades!
+                        </p>
+                    </aside>
+                </div>
             </div>
+        </article>
+    </span>
+
+    <!-- Miembro 4 - Desarrolladora Frontend -->
+    <span>
+        <article class="content">
+            <div class="heyim">
+                <h1>HELLO IM BEA</h1>
             </div>
-            </article>
-            <!--Desarrollador web FROND END-->
-                    <article class="content">
-                     <div class="heyim">
-                           <h1>HELLO IM BEA</h1>      
-                     </div>
             <div class="flex">
-                <img src="./img_team/frondend.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
-            <div class="content1">
-                <aside class="profession">
-                   <h2>DESARROLLADORA FRONDEND</h2>      
-                </aside>
-                <aside class="descriptionright">
-                    <p>
-                Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo.
-                ¡Es como jugar al tetris con requisitos y funcionalidades!
-                    </p>
-                </aside>
+                <img class="teampicture" src="./img_team/frondend.png" alt="Imagen Desarrolladora Frontend">
+                <div class="content1">
+                    <aside class="profession">
+                        <h2>DESARROLLADORA FRONTEND</h2>
+                    </aside>
+                    <aside class="descriptionright">
+                        <p>
+                            Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo. ¡Es como jugar al tetris con requisitos y funcionalidades!
+                        </p>
+                    </aside>
+                </div>
             </div>
+        </article>
+    </span>
+
+    <!-- Miembro 5 - Desarrolladora Backend -->
+    <span>
+        <article class="content">
+            <div class="heyim">
+                <h1>HELLO IM TRIANA</h1>
             </div>
-            </article>
-            <!--dESARROLLADORA BACK END-->
-            <article class="content">
-                     <div class="heyim">
-                           <h1>HELLO IM TRIANA</h1>      
-                     </div>
             <div class="flex">
-                <img src="./img_team/backend.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
-            <div class="content1">
-                <aside class="profession">
-                   <h2>DESARROLLADORA BACKEND</h2>      
-                </aside>
-                <aside class="descriptionright">
-                    <p>
-                Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo.
-                ¡Es como jugar al tetris con requisitos y funcionalidades!
-                    </p>
-                </aside>
+                <img class="teampicture" src="./img_team/backend.png" alt="Imagen Desarrolladora Backend">
+                <div class="content1">
+                    <aside class="profession">
+                        <h2>DESARROLLADORA BACKEND</h2>
+                    </aside>
+                    <aside class="descriptionright">
+                        <p>
+                            Imagina que soy el chef de un restaurante, pero en lugar de crear platillos, diseño experiencias digitales que harán que los usuarios se chupen los dedos. Mi día a día implica equilibrar las necesidades del cliente con la visión del equipo de desarrollo. ¡Es como jugar al tetris con requisitos y funcionalidades!
+                        </p>
+                    </aside>
+                </div>
             </div>
-            </div>
-            </article>
-        </section>
+        </article>
+    </span>
+</section>
     <!-- Enlace a la fuente de iconos Remix -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
