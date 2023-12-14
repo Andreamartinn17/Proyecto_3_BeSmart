@@ -41,6 +41,13 @@ ul {
 a {
   text-decoration: none;
 }
+.nav__menu{
+  margin-left: 265px;
+}
+
+#header-icono{
+  margin-left: -100px;
+}
 
 /* Clase reutilizable para contenedor */
 .container {
