@@ -703,8 +703,7 @@ a {
   word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
   white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
   max-width: 10vh /* Ajusta según sea necesario */
-  border: 1px solid #ccc; /* Añade un borde para visualización */
-}
+}g
 
 /* Estilo para la clase .content */
 .content {
