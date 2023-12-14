@@ -32,6 +32,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color);
+  margin: 0;
+
 }
 
 ul {
@@ -784,12 +786,14 @@ p {
 	align-items: flex-start;
 	padding: 23px 49px 0px 109px;
 	gap: 100px;
-    min-height: 500px
+    min-height: 500px;
+    margin-top: 30px
 }
-
+.contact-footer{
+}
 .h3-hablamos {
 	font-size: 48px;
-	width: 508px;
+	width: 510px;
 	height: 184px;
 }
 .email-footer {
@@ -799,6 +803,7 @@ p {
 }
 .phone-footer {
 	font-size: 24px;
+    width: auto;
 }
 .form-footer {
 	display: flex;
@@ -811,16 +816,23 @@ p {
 	height: 62px;
 	font-size: 40px;
 }
-.label-footer{
-	width: 306px;
-	height: 39px;
+.accept-conditions{
+
 }
 .input-footer{
 	width: 482px;
 	height: 32px;
-}/*Second footer
 }
-
+.btn-form-footer{
+  display: inline-flex;
+  padding: 7px 89px 0px 72px;
+  align-items: center;
+  border-radius: 80px;
+  background-color: #A8201A;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 /*Second footer
 -------------------
@@ -828,20 +840,46 @@ p {
 .second-footer {
     background-color: #2f4858;
 }
+.logo-footer{
 
+}
+.img-logo-footer{
 
-
+}
 .rrss-footer {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
 	gap: 60px;
 }
+.images-rrss{
 
+}
+.pymes-footer{
+
+}
+.pymes-image{
+
+}
 /*final footer
 ----------------
 */
 .final-footer {
     background-color: #2f4858;
+}
+.line-footer{
+
+}
+.copy-footer{
+
+}
+.p-final-footer{
+    color: #FFF;
+    font-family: PT Sans Narrow;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-family: PT Sans Narrow;
 }
 
