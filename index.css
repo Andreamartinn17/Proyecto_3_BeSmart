@@ -505,6 +505,15 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1116px) {
+    #header-icono{
+    height: 50px;
+    width: 180px;
+    margin-left: -16%;
+  
+    }
+  }
+
 
 /* fin nav header */
 
