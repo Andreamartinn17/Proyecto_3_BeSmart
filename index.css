@@ -32,6 +32,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color);
+  margin: 0;
+
 }
 
 ul {
@@ -675,102 +677,92 @@ a {
     
 }
 
-/* rama team */
+/* Estilo para la sección de team */
 .team {
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: scroll 55s linear infinite;
-  }
-  
-  /* Elimina márgenes en elementos relacionados con el área de team */
-  .content, .content1, .descriptionright {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
-  .descriptionright {
-    padding: 50px;
-  }
-  
-.team {
-    /*si añad esto se iguala sin embargo colisiona otra vez el centrado en de losmargenes preestablecidos por defecto*/ 
-    padding: 0;
-    position: relative;
-    display: flex;
-    margin-top: 30px; 
-    overflow: hidden;
-    flex-basis: 100vw; 
-    flex-basis: -30vh;
-    /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
-    /* Agrega scroll-snap para el desplazamiento suave */
+  padding: 0; /* Elimina el relleno interno */
+  margin: 0; /* Elimina los márgenes externos */
+  white-space: nowrap; /* Evita el salto de línea en el texto */
+  overflow: hidden; /* Oculta el contenido que excede el contenedor */
+  animation: scroll 55s linear infinite; /* Animación de desplazamiento horizontal */
+  position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+  display: flex; /* Utiliza el modelo de caja flexible */
+  margin-top: 30px; /* Añade margen superior */
+  flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
 }
 
+/* Elimina márgenes en elementos relacionados con el área de team */
+.content, .content1, .descriptionright {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
+.descriptionright {
+  padding: 50px;
+  overflow: hidden;
+  background-color: #A8201A; /* Color de fondo */
+  border-radius: 7px; /* Borde redondeado */
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19); /* Sombra */
+  color: white; /* Color del texto */
+  line-height: 1.3em; /* Altura de línea */
+  opacity: 0.8; /* Opacidad del contenedor */
+}
+
+/* Estilo para la clase .content */
 .content {
-    display: flex;
+  display: flex; /* Utiliza el modelo de caja flexible */
 }
 
+/* Estilo para la clase .heyim */
 .heyim {
-    margin-top: 50px;
-    font-size: 25px;
-    text-align: center; 
-    font-weight: bold; 
-    color: #A8201A; 
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+  margin-top: 50px; /* Añade margen superior */
+  font-size: 25px; /* Tamaño del texto */
+  text-align: center; /* Alineación del texto al centro */
+  font-weight: bold; /* Texto en negrita */
+  color: #A8201A; /* Color del texto */
+  /* ... Efectos de sombra y estilo adicional ... */
 } 
 
+/* Estilo para la clase .content1 */
 .content1 {
-    display: grid;
-    padding: 50px;
+  display: grid; /* Utiliza el modelo de caja de rejilla */
+  padding: 50px; /* Añade relleno interno */
 }
 
+/* Estilo para la clase .flex */
 .flex {
-    display: flex;
+  display: flex; /* Utiliza el modelo de caja flexible */
 }
 
+/* Estilo para la clase .teampicture */
 .teampicture {
-    justify-content: flex-end;
+  justify-content: flex-end; /* Alinea el contenido al final del contenedor */
 }
 
+/* Estilo para la clase .profession */
 .profession {
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: center;
-    text-align: left; 
-    font-weight: bold; 
-    color: #A8201A; 
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+  margin-top: 50px; /* Añade margen superior */
+  font-size: 20px; /* Tamaño del texto */
+  text-align: center; /* Alineación del texto al centro */
+  text-align: left; /* Alineación del texto a la izquierda (repetición, considerar eliminar) */
+  font-weight: bold; /* Texto en negrita */
+  color: #A8201A; /* Color del texto */
+  /* ... Efectos de sombra y estilo adicional ... */
 }
 
-.descriptionright {
-    overflow: hidden;
-    background-color: #A8201A;
-    border-radius: 7px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
-    color: white;
-    line-height: 1.3em;
-    opacity: 0.8;
-}
-
+/* Estilo para la clase .descriptionright dentro de un párrafo */
 p {
-    font-size: 25px;
-
+  font-size: 25px; /* Tamaño del texto */
 }
 
-.team {
-    white-space: nowrap;
-    animation: scroll 55s linear infinite;
-}
-
+/* Animación de desplazamiento horizontal */
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
 
 /*FOOTER-ANDREA
@@ -784,12 +776,15 @@ p {
 	justify-content: space-around;
 	align-items: flex-start;
 	padding: 23px 49px 0px 109px;
-	gap: 100px
+	gap: 100px;
+    min-height: 500px;
+    margin-top: 30px
 }
-
+.contact-footer{
+}
 .h3-hablamos {
 	font-size: 48px;
-	width: 508px;
+	width: 510px;
 	height: 184px;
 }
 .email-footer {
@@ -799,6 +794,7 @@ p {
 }
 .phone-footer {
 	font-size: 24px;
+    width: auto;
 }
 .form-footer {
 	display: flex;
@@ -811,16 +807,23 @@ p {
 	height: 62px;
 	font-size: 40px;
 }
-.label-footer{
-	width: 306px;
-	height: 39px;
+.accept-conditions{
+
 }
 .input-footer{
 	width: 482px;
 	height: 32px;
-}/*Second footer
 }
-
+.btn-form-footer{
+  display: inline-flex;
+  padding: 7px 89px 0px 72px;
+  align-items: center;
+  border-radius: 80px;
+  background-color: #A8201A;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 /*Second footer
 -------------------
@@ -828,20 +831,46 @@ p {
 .second-footer {
     background-color: #2f4858;
 }
+.logo-footer{
 
+}
+.img-logo-footer{
 
-
+}
 .rrss-footer {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
 	gap: 60px;
 }
+.images-rrss{
 
+}
+.pymes-footer{
+
+}
+.pymes-image{
+
+}
 /*final footer
 ----------------
 */
 .final-footer {
     background-color: #2f4858;
+}
+.line-footer{
+
+}
+.copy-footer{
+
+}
+.p-final-footer{
+    color: #FFF;
+    font-family: PT Sans Narrow;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-family: PT Sans Narrow;
 }
 
