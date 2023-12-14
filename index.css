@@ -60,16 +60,20 @@ a {
 }
 
 /* Estilos del logotipo en el encabezado */
+/* ubicacion del icono BeSmart */
+.ubi-icono{
+  display: flex;
+  margin-left: -135px;
+}
 #header-icono{
   height: 80px;
   width: 350px;
-  margin-left: -18%; /*afectan a los margenes del slider teams*/ /*quizas metiendo todo dentro de un contenedor?*/
+  /*afectan a los margenes del slider teams*/ /*quizas metiendo todo dentro de un contenedor?*/
 }
 
 /* Estilos para el desplegable de países */
-
-.fondo-paises{
-  margin-right: -120px; /*afectan a los margenes del slider teams*/ /*quizas metiendo todo dentro de un contenedor?*/
+.ubi-paises{
+  margin-left: 300px;
 }
 
 
