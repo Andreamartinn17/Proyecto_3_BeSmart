@@ -678,16 +678,16 @@ a {
 }
 
 /* Estilo para la sección de team */
+
 .team {
   padding: 0; /* Elimina el relleno interno */
   margin: 0; /* Elimina los márgenes externos */
   white-space: nowrap; /* Evita el salto de línea en el texto */
   overflow: hidden; /* Oculta el contenido que excede el contenedor */
-  animation: scroll 50s linear infinite; /* Animación de desplazamiento horizontal */
+  animation: scroll 50s line infinite; /* Animación de desplazamiento horizontal */
   position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
   display: flex; /* Utiliza el modelo de caja flexible */
-  margin-top: 30px; /* Añade margen superior */
-  flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
+  align-items: center; /* Centra los elementos en el eje transversal (vertical) */
 }
 
 /* Elimina márgenes en elementos relacionados con el área de team */
@@ -698,14 +698,12 @@ a {
 
 /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
 .descriptionright {
-  padding: 50px;
-  overflow: hidden;
-  background-color: #A8201A; /* Color de fondo */
-  border-radius: 7px; /* Borde redondeado */
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19); /* Sombra */
-  color: white; /* Color del texto */
-  line-height: 1.3em; /* Altura de línea */
-  opacity: 0.8; /* Opacidad del contenedor */
+  font-size: 1vw; /* Reducido a la mitad para adaptarse a viewport */
+  line-height: 1.5; /* Ajusta según sea necesario para el espaciado entre líneas */
+  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
+  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+  max-width: 10vh /* Ajusta según sea necesario */
+  border: 1px solid #ccc; /* Añade un borde para visualización */
 }
 
 /* Estilo para la clase .content */
@@ -726,7 +724,7 @@ a {
 /* Estilo para la clase .content1 */
 .content1 {
   display: grid; /* Utiliza el modelo de caja de rejilla */
-  padding: 50px; /* Añade relleno interno */
+  padding: 3vw; /* Añade relleno interno */
 }
 
 /* Estilo para la clase .flex */
@@ -736,7 +734,9 @@ a {
 
 /* Estilo para la clase .teampicture */
 .teampicture {
-  justify-content: flex-end; /* Alinea el contenido al final del contenedor */
+  align-self: flex-end; /* Alinea las imágenes en la parte inferior del contenedor */
+  margin-top: auto; /* Empuja las imágenes hacia la parte inferior */
+/* Alinea el contenido al final del contenedor */
 }
 
 /* Estilo para la clase .profession */
@@ -751,8 +751,9 @@ a {
 }
 
 /* Estilo para la clase .descriptionright dentro de un párrafo */
-p {
-  font-size: 25px; /* Tamaño del texto */
+.descriptionright p {
+  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
+  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
 }
 
 /* Animación de desplazamiento horizontal */
