@@ -1,5 +1,4 @@
 body{
-    background-color: beige;
     font-family: 'Montserrat',sans-serif;
 }
 /* nav header  */
@@ -57,20 +56,24 @@ a {
   width: 100%;
   box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
   background-color: white;
-  z-index: var(--z-fixed);
+  z-index: 1000;
 }
 
 /* Estilos del logotipo en el encabezado */
+/* ubicacion del icono BeSmart */
+.ubi-icono{
+  display: flex;
+  margin-left: -135px;
+}
 #header-icono{
   height: 80px;
   width: 350px;
-  margin-left: -18%;
+  /*afectan a los margenes del slider teams*/ /*quizas metiendo todo dentro de un contenedor?*/
 }
 
 /* Estilos para el desplegable de países */
-
-.fondo-paises{
-  margin-right: -120px;
+.ubi-paises{
+  margin-left: 300px;
 }
 
 
@@ -237,6 +240,18 @@ a {
 }
 
 
+/* Estilos específicos para versiones móviles */
+@media only screen and (max-width: 600px) {
+  #header-icono {
+      /* Ajusta la posición para pantallas más pequeñas (móviles) */
+      margin-top: 4px; /* Ajusta la posición vertical según tus necesidades */
+      margin-left: 5px; /* Ajusta la posición horizontal según tus necesidades */
+      height: 50px;
+      width: 180px;
+      margin-left: -50px;
+  }
+}
+
 /* Estilos de los enlaces de navegación */
 .nav__link {
   color: var(--title-color);
@@ -356,6 +371,11 @@ a {
     justify-content: space-between;
   }
 
+  #header-icono{
+
+    height: 85px;
+    width: 290px;
+  }
   /* Oculta el botón de menú en dispositivos grandes */
   .nav__toggle {
     display: none;
@@ -486,24 +506,20 @@ a {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-body {
-    background-color:  rgba(10, 1, 65, 0.7);
 }
 
 .titulo {
     text-align: center;
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 180px;
+    color:black;
+
 }
 
 .slider-box{
     width: 1280px;
-    height: auto;
     margin: 50px auto 0;
+    margin-bottom: -200px; /*BORDE DE ABAJO DE LAS SLIDES DE VALORES*/
     overflow: hidden;
 }
 
@@ -523,15 +539,26 @@ body {
 .content-valueslider{
     position:absolute;
     text-align: center;
-    padding: 0 250px;
+    padding: 0 20px;
     top: 200px;
     color:white;
+    border:1px solid black;
+    background: rgba(10, 1, 65, 0.7);
+    margin:0 90px ;
+
 }
 
 .content-valueslider h2{
     font-size: 45px;
     margin-bottom: 35px;
+    margin-top: 35px;
 } 
+
+.content-valueslider p{
+    font-size: px;
+    margin-bottom: 35px;
+} 
+
 
 .slider-box img{
     width: 100%;
@@ -552,10 +579,7 @@ body {
     100% { margin-left: -300%;}
 }
 /*Slider de los valores de empresa/*/
-
-
-
-
+/*CSS DE MAIN VIDEO*/
 .video_main{
     position:absolute;
     top:0;
@@ -570,7 +594,7 @@ body {
     border:1px solid black;
     background: rgba(10, 1, 65, 0.7);
     padding: 45px;
-    width: 50%;
+    width: 60%;
     display:flex;
     flex-direction:column;
     margin: 0 auto;/*Para centrarlo*/
@@ -592,7 +616,7 @@ body {
     color:white;
     align-self: center;
     font-weight: bold;
-    font-size:35px;
+    font-size:40px;
     margin-left: 13%;
 }
 
@@ -624,18 +648,21 @@ body {
 
 .button-main-with-video{
     color:white;
-    background-image: linear-gradient(
-        150deg,
-        #9500ff,
-        #09f,
-        #00DDFF
-    );
+    background-color: #F6AE2D;
     padding: 8px;
     border-radius: 8px;
     border:0;
     font-weight: bold;
     font-size: 16px;
     cursor:pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.button-main-with-video:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @media screen and (max-width:768px) {
@@ -649,24 +676,43 @@ body {
 
 /* rama team */
 .team {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 55s linear infinite;
+  }
+  
+  /* Elimina márgenes en elementos relacionados con el área de team */
+  .content, .content1, .descriptionright {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
+  .descriptionright {
+    padding: 50px;
+  }
+  
+.team {
+    /*si añad esto se iguala sin embargo colisiona otra vez el centrado en de losmargenes preestablecidos por defecto*/ 
+    padding: 0;
+    position: relative;
     display: flex;
-    margin-top: 20px; 
+    margin-top: 30px; 
+    overflow: hidden;
+    flex-basis: 100vw; 
+    flex-basis: -30vh;
+    /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
     /* Agrega scroll-snap para el desplazamiento suave */
-}
-
-.team article {
-    flex: 0 0 auto; /* Asegura que el tamaño no se expanda ni se contraiga */
-    flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
-    margin-top: 50px;
 }
 
 .content {
     display: flex;
-    background-color: white;
 }
 
 .heyim {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 25px;
     text-align: center; 
     font-weight: bold; 
@@ -683,6 +729,10 @@ body {
     display: flex;
 }
 
+.teampicture {
+    justify-content: flex-end;
+}
+
 .profession {
     margin-top: 50px;
     font-size: 20px;
@@ -694,8 +744,7 @@ body {
 }
 
 .descriptionright {
-    padding: 25px;
-    background-attachment: fixed;
+    overflow: hidden;
     background-color: #A8201A;
     border-radius: 7px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
@@ -704,11 +753,13 @@ body {
     opacity: 0.8;
 }
 
-.team {
-    white-space: nowrap;
+p {
+    font-size: 25px;
+
 }
 
 .team {
+    white-space: nowrap;
     animation: scroll 55s linear infinite;
 }
 
@@ -720,6 +771,7 @@ body {
         transform: translateX(-100%);
     }
 }
+
 /*FOOTER-ANDREA
 -------------------------*/
 .footer-general {
