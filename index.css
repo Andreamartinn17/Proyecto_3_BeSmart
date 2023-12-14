@@ -64,13 +64,13 @@ a {
 #header-icono{
   height: 80px;
   width: 350px;
-  margin-left: -18%;
+  margin-left: -18%; /*afectan a los margenes del slider teams*/ /*quizas metiendo todo dentro de un contenedor?*/
 }
 
 /* Estilos para el desplegable de países */
 
 .fondo-paises{
-  margin-right: -120px;
+  margin-right: -120px; /*afectan a los margenes del slider teams*/ /*quizas metiendo todo dentro de un contenedor?*/
 }
 
 
@@ -649,24 +649,43 @@ body {
 
 /* rama team */
 .team {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 55s linear infinite;
+  }
+  
+  /* Elimina márgenes en elementos relacionados con el área de team */
+  .content, .content1, .descriptionright {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
+  .descriptionright {
+    padding: 50px;
+  }
+  
+.team {
+    /*si añad esto se iguala sin embargo colisiona otra vez el centrado en de losmargenes preestablecidos por defecto*/ 
+    padding: 0;
+    position: relative;
     display: flex;
-    margin-top: 20px; 
+    margin-top: 30px; 
+    overflow: hidden;
+    flex-basis: 100vw; 
+    flex-basis: -30vh;
+    /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
     /* Agrega scroll-snap para el desplazamiento suave */
-}
-
-.team article {
-    flex: 0 0 auto; /* Asegura que el tamaño no se expanda ni se contraiga */
-    flex-basis: 100vw; /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
-    margin-top: 50px;
 }
 
 .content {
     display: flex;
-    background-color: white;
 }
 
 .heyim {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 25px;
     text-align: center; 
     font-weight: bold; 
@@ -683,6 +702,10 @@ body {
     display: flex;
 }
 
+.teampicture {
+    justify-content: flex-end;
+}
+
 .profession {
     margin-top: 50px;
     font-size: 20px;
@@ -694,8 +717,7 @@ body {
 }
 
 .descriptionright {
-    padding: 25px;
-    background-attachment: fixed;
+    overflow: hidden;
     background-color: #A8201A;
     border-radius: 7px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
@@ -704,12 +726,14 @@ body {
     opacity: 0.8;
 }
 
-.team {
-    white-space: nowrap;
+p {
+    font-size: 25px;
+
 }
 
 .team {
-    animation: scroll 5s linear infinite;
+    white-space: nowrap;
+    animation: scroll 55s linear infinite;
 }
 
 @keyframes scroll {
@@ -720,6 +744,7 @@ body {
         transform: translateX(-100%);
     }
 }
+
 /*FOOTER-ANDREA
 -------------------------*/
 .footer-general {
