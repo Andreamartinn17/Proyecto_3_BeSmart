@@ -32,8 +32,6 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color);
-  margin: 0;
-
 }
 
 ul {
@@ -42,6 +40,13 @@ ul {
 
 a {
   text-decoration: none;
+}
+.nav__menu{
+  margin-left: 265px;
+}
+
+#header-icono{
+  margin-left: -100px;
 }
 
 /* Clase reutilizable para contenedor */
@@ -254,6 +259,20 @@ a {
       margin-left: -50px;
   }
 }
+/* Estilos específicos para versiones móviles */
+
+@media only screen and (max-width: 600px) {
+  #header-icono {
+    margin-top: 4px;
+    margin-left: 5px;
+    height: 50px;
+    width: 240px;
+    margin-left: -80px;
+    content: url('./img/iconoamarillo.png');
+  }
+}
+
+
 
 /* Estilos de los enlaces de navegación */
 .nav__link {
@@ -500,6 +519,15 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1116px) {
+    #header-icono{
+    height: 50px;
+    width: 180px;
+    margin-left: -16%;
+  
+    }
+  }
+
 
 /* fin nav header */
 
@@ -581,6 +609,8 @@ a {
     75% { margin-left: -300%;}
     100% { margin-left: -300%;}
 }
+
+
 /*Slider de los valores de empresa/*/
 /*CSS DE MAIN VIDEO*/
 .video_main{
@@ -677,7 +707,7 @@ a {
     
 }
 
-/* Estilo para la sección de team */
+/* rama team */
 
 .team {
   padding: 0; /* Elimina el relleno interno */
@@ -704,49 +734,56 @@ a {
   white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
   max-width: 10vh /* Ajusta según sea necesario */
 }g
+  max-width: 100vh /* Ajusta según sea necesario */
+}
 
 /* Estilo para la clase .content */
 .content {
-  display: flex; /* Utiliza el modelo de caja flexible */
+    display: flex;
 }
 
-/* Estilo para la clase .heyim */
 .heyim {
-  margin-top: 50px; /* Añade margen superior */
-  font-size: 25px; /* Tamaño del texto */
-  text-align: center; /* Alineación del texto al centro */
-  font-weight: bold; /* Texto en negrita */
-  color: #A8201A; /* Color del texto */
-  /* ... Efectos de sombra y estilo adicional ... */
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center; 
+    font-weight: bold; 
+    color: #A8201A; 
+    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
 } 
 
-/* Estilo para la clase .content1 */
 .content1 {
-  display: grid; /* Utiliza el modelo de caja de rejilla */
-  padding: 3vw; /* Añade relleno interno */
+    display: grid;
+    padding: 3vw;
 }
 
-/* Estilo para la clase .flex */
 .flex {
-  display: flex; /* Utiliza el modelo de caja flexible */
+    display: flex;
 }
 
-/* Estilo para la clase .teampicture */
 .teampicture {
   align-self: flex-end; /* Alinea las imágenes en la parte inferior del contenedor */
   margin-top: auto; /* Empuja las imágenes hacia la parte inferior */
 /* Alinea el contenido al final del contenedor */
 }
 
-/* Estilo para la clase .profession */
 .profession {
-  margin-top: 50px; /* Añade margen superior */
-  font-size: 20px; /* Tamaño del texto */
-  text-align: center; /* Alineación del texto al centro */
-  text-align: left; /* Alineación del texto a la izquierda (repetición, considerar eliminar) */
-  font-weight: bold; /* Texto en negrita */
-  color: #A8201A; /* Color del texto */
-  /* ... Efectos de sombra y estilo adicional ... */
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-align: left; 
+    font-weight: bold; 
+    color: #A8201A; 
+    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+.descriptionright {
+    overflow: hidden;
+    background-color: #A8201A;
+    border-radius: 7px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
+    color: white;
+    line-height: 1.3em;
+    opacity: 0.8;
 }
 
 /* Estilo para la clase .descriptionright dentro de un párrafo */
@@ -755,14 +792,13 @@ a {
   white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
 }
 
-/* Animación de desplazamiento horizontal */
 @keyframes scroll {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 
@@ -777,15 +813,12 @@ a {
 	justify-content: space-around;
 	align-items: flex-start;
 	padding: 23px 49px 0px 109px;
-	gap: 100px;
-    min-height: 500px;
-    margin-top: 30px
+	gap: 100px
 }
-.contact-footer{
-}
+
 .h3-hablamos {
 	font-size: 48px;
-	width: 510px;
+	width: 508px;
 	height: 184px;
 }
 .email-footer {
@@ -795,7 +828,6 @@ a {
 }
 .phone-footer {
 	font-size: 24px;
-    width: auto;
 }
 .form-footer {
 	display: flex;
@@ -808,23 +840,16 @@ a {
 	height: 62px;
 	font-size: 40px;
 }
-.accept-conditions{
-
+.label-footer{
+	width: 306px;
+	height: 39px;
 }
 .input-footer{
 	width: 482px;
 	height: 32px;
+}/*Second footer
 }
-.btn-form-footer{
-  display: inline-flex;
-  padding: 7px 89px 0px 72px;
-  align-items: center;
-  border-radius: 80px;
-  background-color: #A8201A;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-}
+
 
 /*Second footer
 -------------------
@@ -832,46 +857,20 @@ a {
 .second-footer {
     background-color: #2f4858;
 }
-.logo-footer{
 
-}
-.img-logo-footer{
 
-}
+
 .rrss-footer {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
 	gap: 60px;
 }
-.images-rrss{
 
-}
-.pymes-footer{
-
-}
-.pymes-image{
-
-}
 /*final footer
 ----------------
 */
 .final-footer {
     background-color: #2f4858;
-}
-.line-footer{
-
-}
-.copy-footer{
-
-}
-.p-final-footer{
-    color: #FFF;
-    font-family: PT Sans Narrow;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    font-family: PT Sans Narrow;
 }
 
