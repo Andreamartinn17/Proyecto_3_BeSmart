@@ -708,38 +708,34 @@ a {
 }
 
 /* rama team */
+
 .team {
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: scroll 55s linear infinite;
-  }
-  
-  /* Elimina márgenes en elementos relacionados con el área de team */
-  .content, .content1, .descriptionright {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
-  .descriptionright {
-    padding: 50px;
-  }
-  
-.team {
-    /*si añad esto se iguala sin embargo colisiona otra vez el centrado en de losmargenes preestablecidos por defecto*/ 
-    padding: 0;
-    position: relative;
-    display: flex;
-    margin-top: 30px; 
-    overflow: hidden;
-    flex-basis: 100vw; 
-    flex-basis: -30vh;
-    /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
-    /* Agrega scroll-snap para el desplazamiento suave */
+  padding: 0; /* Elimina el relleno interno */
+  margin: 0; /* Elimina los márgenes externos */
+  white-space: nowrap; /* Evita el salto de línea en el texto */
+  overflow: hidden; /* Oculta el contenido que excede el contenedor */
+  animation: scroll 50s line infinite; /* Animación de desplazamiento horizontal */
+  position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+  display: flex; /* Utiliza el modelo de caja flexible */
+  align-items: center; /* Centra los elementos en el eje transversal (vertical) */
 }
 
+/* Elimina márgenes en elementos relacionados con el área de team */
+.content, .content1, .descriptionright {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
+.descriptionright {
+  font-size: 1vw; /* Reducido a la mitad para adaptarse a viewport */
+  line-height: 1.5; /* Ajusta según sea necesario para el espaciado entre líneas */
+  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
+  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+  max-width: 100vh /* Ajusta según sea necesario */
+}
+
+/* Estilo para la clase .content */
 .content {
     display: flex;
 }
@@ -755,7 +751,7 @@ a {
 
 .content1 {
     display: grid;
-    padding: 50px;
+    padding: 3vw;
 }
 
 .flex {
@@ -763,7 +759,9 @@ a {
 }
 
 .teampicture {
-    justify-content: flex-end;
+  align-self: flex-end; /* Alinea las imágenes en la parte inferior del contenedor */
+  margin-top: auto; /* Empuja las imágenes hacia la parte inferior */
+/* Alinea el contenido al final del contenedor */
 }
 
 .profession {
@@ -786,14 +784,10 @@ a {
     opacity: 0.8;
 }
 
-p {
-    font-size: 25px;
-
-}
-
-.team {
-    white-space: nowrap;
-    animation: scroll 55s linear infinite;
+/* Estilo para la clase .descriptionright dentro de un párrafo */
+.descriptionright p {
+  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
+  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
 }
 
 @keyframes scroll {
