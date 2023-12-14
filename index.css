@@ -683,7 +683,7 @@ a {
   margin: 0; /* Elimina los márgenes externos */
   white-space: nowrap; /* Evita el salto de línea en el texto */
   overflow: hidden; /* Oculta el contenido que excede el contenedor */
-  animation: scroll 55s linear infinite; /* Animación de desplazamiento horizontal */
+  animation: scroll 50s linear infinite; /* Animación de desplazamiento horizontal */
   position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
   display: flex; /* Utiliza el modelo de caja flexible */
   margin-top: 30px; /* Añade margen superior */

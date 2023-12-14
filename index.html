@@ -210,7 +210,25 @@
     <!--SECTION SLIDERS/-->
 
        <!-- TEAM SECTION-->
+       
         <section class="team">
+            <script>
+                // Función para realizar un scroll automático
+                function autoScroll() {
+                    const teamContainer = document.querySelector('.team');
+                    const scrollAmount = 500; // Ajusta la velocidad del scroll según sea necesario
+        
+                    // Mueve el scroll horizontalmente
+                    teamContainer.scrollLeft += scrollAmount;
+        
+                    // Si alcanza el final, reinicia al principio
+                    if (teamContainer.scrollLeft >= teamContainer.scrollWidth - teamContainer.clientWidth) {
+                        teamContainer.scrollLeft = 0;
+                    }
+                }
+                // Configura un intervalo para llamar a la función de scroll automático
+                setInterval(autoScroll, 1000); // Ajusta el intervalo según sea necesario (en milisegundos)
+            </script>  
             <!--proyectowner-->
             <article class="content">
                      <div class="heyim">
