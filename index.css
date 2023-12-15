@@ -612,6 +612,8 @@ a {
     75% { margin-left: -300%;}
     100% { margin-left: -300%;}
 }
+
+
 /*Slider de los valores de empresa/*/
 /*CSS DE MAIN VIDEO*/
 .video_main{
@@ -709,39 +711,39 @@ a {
 }
 
 /* rama team */
+
 .team {
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: scroll 55s linear infinite;
-  }
-  
-  /* Elimina márgenes en elementos relacionados con el área de team */
-  .content, .content1, .descriptionright {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
-  .descriptionright {
-    padding: 50px;
-  }
-  
-.team {
-    /*si añad esto se iguala sin embargo colisiona otra vez el centrado en de losmargenes preestablecidos por defecto*/ 
-    padding: 0;
-    position: relative;
-    display: flex;
-    margin-top: 30px; 
-    overflow: hidden;
-    flex-basis: 100vw; 
-    flex-basis: -30vh;
-    /* Establece el tamaño base para ocupar toda la pantalla horizontalmente */
-    /* Agrega scroll-snap para el desplazamiento suave */
+  background-color: #191C26;
+  width: 100vw;
+  height: 70vh ;
+  padding: 0; /* Elimina el relleno interno */
+  margin: 0; /* Elimina los márgenes externos */
+  white-space: nowrap; /* Evita el salto de línea en el texto */
+  overflow: hidden; /* Oculta el contenido que excede el contenedor */
+  animation: scroll 50s line infinite; /* Animación de desplazamiento horizontal */
+  position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+  display: flex; /* Utiliza el modelo de caja flexible */
+  align-items: center; /* Centra los elementos en el eje transversal (vertical) */
+  align-items: flex-end;
 }
 
+/* Elimina márgenes en elementos relacionados con el área de team */
+.content, .content1, .descriptionright {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
+.descriptionright {
+  font-size: 1vw; /* Reducido a la mitad para adaptarse a viewport */
+  line-height: 1.5; /* Ajusta según sea necesario para el espaciado entre líneas */
+  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
+  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+}
+
+/* Estilo para la clase .content */
 .content {
+    height: 70vh;
     display: flex;
 }
 
@@ -755,16 +757,20 @@ a {
 } 
 
 .content1 {
+  background-color: aqua;
     display: grid;
-    padding: 50px;
+    padding: 3vw;
 }
 
 .flex {
-    display: flex;
+  background-color: #F6AE2D;
+  display: flex;   
 }
 
 .teampicture {
-    justify-content: flex-end;
+  align-self: flex-end; /* Alinea las imágenes en la parte inferior del contenedor */
+  margin-top: auto; /* Empuja las imágenes hacia la parte inferior */
+/* Alinea el contenido al final del contenedor */
 }
 
 .profession {
@@ -773,13 +779,16 @@ a {
     text-align: center;
     text-align: left; 
     font-weight: bold; 
-    color: #A8201A; 
+    color: #A8201A;  
     text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-}
+    word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
+    white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+  }
 
 .descriptionright {
+  background-color: #F6AE2D;
+    padding: 1vw;
     overflow: hidden;
-    background-color: #A8201A;
     border-radius: 7px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
     color: white;
@@ -787,14 +796,10 @@ a {
     opacity: 0.8;
 }
 
-p {
-    font-size: 25px;
-
-}
-
-.team {
-    white-space: nowrap;
-    animation: scroll 55s linear infinite;
+/* Estilo para la clase .descriptionright dentro de un párrafo */
+.descriptionright p {
+  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
+  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
 }
 
 @keyframes scroll {

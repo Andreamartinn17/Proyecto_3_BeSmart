@@ -170,7 +170,7 @@
     <div class="content-valueslider">
       <h2>COMPROMISO CON LA COMUNIDAD LOCAL</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit incidunt explicabo optio sequi ullam saepe provident quidem, fuga reiciendis facere consequatur exercitationem hic nulla laboriosam suscipit soluta dolorem obcaecati veniam.
+        Buscamos fortalecer la red empresarial local mediante la creación de lazos sólidos, apoyando eventos y actividades comunitarias, y contribuyendo al progreso tecnológico que beneficie a todos.
       </p>
     </div>
   </li>
@@ -179,7 +179,7 @@
     <div class="content-valueslider">
       <h2>ADAPTABILIDAD Y PERSONALIZACION</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit incidunt explicabo optio sequi ullam saepe provident quidem, fuga reiciendis facere consequatur exercitationem hic nulla laboriosam suscipit soluta dolorem obcaecati veniam.
+        Nos esforzamos por ser flexibles en nuestro enfoque, asegurando que cada solución sea una respuesta precisa a los desafíos y objetivos particulares de cada empresa.
       </p>
     </div>
   </li>
@@ -188,7 +188,7 @@
     <div class="content-valueslider">
       <h2>EDUCACION Y TRANSPARENCIA</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit incidunt explicabo optio sequi ullam saepe provident quidem, fuga reiciendis facere consequatur exercitationem hic nulla laboriosam suscipit soluta dolorem obcaecati veniam.
+        Nos comprometemos a educar y capacitar a nuestros clientes locales, proporcionando información clara y transparente sobre nuestras soluciones y procesos. 
       </p>
     </div>
   </li>
@@ -197,25 +197,40 @@
     <div class="content-valueslider">
       <h2>EDUCACION Y TRANSPARENCIA</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit incidunt explicabo optio sequi ullam saepe provident quidem, fuga reiciendis facere consequatur exercitationem hic nulla laboriosam suscipit soluta dolorem obcaecati veniam.
+        Nos comprometemos a educar y capacitar a nuestros clientes locales, proporcionando información clara y transparente sobre nuestras soluciones y procesos.
       </p>
     </div>
   </li>
   </ul>
   
   </div>
-  
     <!--SECTION SLIDERS/-->
-
-       <!-- TEAM SECTION-->
+       <!-- TEAM SECTION-->     
         <section class="team">
+            <script>
+                // Función para realizar un scroll automático
+                function autoScroll() {
+                    const teamContainer = document.querySelector('.team');
+                    const scrollAmount = 500; // Ajusta la velocidad del scroll según sea necesario
+        
+                    // Mueve el scroll horizontalmente
+                    teamContainer.scrollLeft += scrollAmount;
+        
+                    // Si alcanza el final, reinicia al principio
+                    if (teamContainer.scrollLeft >= teamContainer.scrollWidth - teamContainer.clientWidth) {
+                        teamContainer.scrollLeft = 0;
+                    }
+                }
+                // Configura un intervalo para llamar a la función de scroll automático
+                setInterval(autoScroll, 1000); // Ajusta el intervalo según sea necesario (en milisegundos)
+            </script>  
             <!--proyectowner-->
             <article class="content">
                      <div class="heyim">
                            <h1>HELLO IM KRISTY</h1>      
                      </div>
             <div class="flex">
-                <img src="./img_team/projectowner.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
+                <img class="teampicture" src="./img_team/projectowner.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
             <div class="content1">
                 <aside class="profession">
                    <h2>PROJECT OWNER</h2>      
@@ -235,7 +250,7 @@
                            <h1>HELLO IM ANDREA</h1>      
                      </div>
             <div class="flex">
-                <img src="./img_team/scrummaster.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
+                <img class="teampicture" src="./img_team/scrummaster.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
             <div class="content1">
                 <aside class="profession">
                    <h2>SCRUM MASTER</h2>      
@@ -255,7 +270,7 @@
                            <h1>HELLO IM ANTONIA</h1>      
                      </div>
             <div class="flex">
-                <img src="./img_team/diseñográfico.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
+                <img class="teampicture" src="./img_team/diseñográfico.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
             <div class="content1">
                 <aside class="profession">
                    <h2>DISEÑADORA GRÁFICA</h2>      
@@ -275,7 +290,7 @@
                            <h1>HELLO IM BEA</h1>      
                      </div>
             <div class="flex">
-                <img src="./img_team/frondend.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
+                <img class="teampicture" class="teampicture" src="./img_team/frondend.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
             <div class="content1">
                 <aside class="profession">
                    <h2>DESARROLLADORA FRONDEND</h2>      
@@ -295,7 +310,7 @@
                            <h1>HELLO IM TRIANA</h1>      
                      </div>
             <div class="flex">
-                <img src="./img_team/backend.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
+                <img class="teampicture" src="./img_team/backend.png" alt="imagen project owner en el cual aparece mujer de 20 años con traje de pantalon y mericana blanca">
             <div class="content1">
                 <aside class="profession">
                    <h2>DESARROLLADORA BACKEND</h2>      
