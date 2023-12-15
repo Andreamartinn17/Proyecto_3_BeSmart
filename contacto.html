@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>BeSmart</title>
+     <!-- Inicio Nav header -->
+     <!-- Enlace a la fuente de iconos Remix -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+     <!-- Enlace al archivo de estilos CSS -->
+     <link rel="stylesheet" href="./contacto.css">
+ </head>
+ <header>
+      <div class="content-container">
+     <!-- Encabezado (Header) -->
+     <header class="header">
+         <!-- Navegación principal -->
+         <nav class="nav container">
+             <!-- Logotipo e icono en la navegación -->
+             <div class="nav__data">
+                 <a href="#" class="nav__logo">
+                     <i class="ri-code-s-slash-line"></i> <img src="./img header/smart-correcto.png" alt="icono" id="header-icono">
+                 </a>
+ 
+                 <!-- Botón de menú para dispositivos móviles -->
+                 <div class="nav__toggle" id="nav-toggle"> 
+                     <i class="ri-menu-line nav__toggle-menu"></i>
+                     <i class="ri-close-line nav__toggle-close"></i>
+                 </div>
+             </div>
+ 
+             <!-- Menú de navegación -->
+             <div class="nav__menu" id="nav-menu">
+                 <ul class="nav__list">
+                     <!-- Elemento de menú vacío -->
+                     <li>
+                         <a href="#" class="nav__link"></a>
+                     </li>
+ 
+                     <!-- Desplegable 1 (Servicios) -->
+                     <li class="dropdown__item">                      
+                         <div class="nav__link dropdown__button">
+                            Servicios <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                         </div>
+ 
+                         <div class="dropdown__container">
+                             <div class="dropdown__content">
+                                 <div class="dropdown__group">
+                                     <!-- Icono y título del desplegable -->
+                                     <div class="dropdown__icon">
+                                         <i class="ri-flashlight-line"></i>
+                                     </div>
+ 
+                                     <span class="dropdown__title">Servicios</span>
+ 
+                                     <!-- Lista de servicios -->
+                                     <ul class="dropdown__list">
+                                         <li>
+                                             <a href="#" class="dropdown__link">Servicio 1</a>
+                                         </li>
+                                         <li>
+                                             <a href="#" class="dropdown__link">Servicio 2</a>
+                                         </li>
+                                         <li>
+                                             <a href="#" class="dropdown__link">Servicio 3</a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </li>
+ 
+                     <!-- Desplegable 2 (Equipo) -->
+                     <li class="dropdown__item">
+                         <div class="nav__link dropdown__button">
+                             Equipo <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                         </div>
+ 
+                         <div class="dropdown__container">
+                             <div class="dropdown__content">
+                                 <div class="dropdown__group">
+                                     <!-- Icono y título del desplegable -->
+                                     <div class="dropdown__icon">
+                                         <i class="ri-code-line"></i>
+                                     </div>
+ 
+                                     <span class="dropdown__title">Equipo</span>
+ 
+                                     <!-- Lista de integrantes del equipo -->
+                                     <ul class="dropdown__list">
+                                         <li>
+                                             <a href="#" class="dropdown__link">Integrante 1</a>
+                                         </li>
+                                         <li>
+                                             <a href="#" class="dropdown__link">Integrante 2.</a>
+                                         </li>
+                                         <li>
+                                             <a href="#" class="dropdown__link">Integrante 3</a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </li>
+ 
+                     <!-- Elementos de menú adicionales -->
+                     <li>
+                         <a href="#" class="nav__link">Nosotros</a>
+                     </li>
+                     <li>
+                         <a href="#" class="nav__link">Presupuesto</a>
+                     </li>
+                     <li>
+                         <a href="#" class="boton-contacto"><h6>Contacto</h6></a>
+                     </li>
+ 
+                     <!-- Contenedor de elementos adicionales (países) -->
+                     <nav class="fondo-paises">
+                         <ul>
+                             <li><a href="#"><img src="./img header/Bandera_de_España_(sin_escudo).svg.png" alt="" id="bandera-principal"></a>
+                                 <ul>
+                                     <li><a href="#"><img src="./img header/italia.png" alt="" id="tamaño-paises"></a></li>
+                                     <li><a href="#"><img src="./img header/portugal.png" alt="" id="tamaño-paises"></a></li>
+                                     <li><a href="#"><img src="./img header/402-4025501_icono-bandera-alemania-png-clipart.png" alt="" id="tamaño-paises"></a></li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </nav>
+                 </ul>
+             </div>
+         </nav>
+     </header>
+     <!--  Fin Nav header -->
+     <body>
+        <div class="content-container1">
+        <div class="formulario">
+            <h2>Contactanos</h2>
+            <form action="#" method="post">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        
+              <label for="apellido">Apellidos:</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Apellidos">
+        
+              <label for="telefono">Número de teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+        
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6222941.253190838!2d-3.713378999999999!3d40.396764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses&q=40.7128,-74.0060" width="680" height="425"  style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="message-container"></div>
+
+     </body>
+     <script src="./contact.js"></script>
