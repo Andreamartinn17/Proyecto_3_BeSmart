@@ -755,8 +755,9 @@ a {
 
 .content1 {
   background-color: aqua;
-    display: grid;
-    padding: 3vw;
+  display: grid;
+  padding: 3vw;
+  width: 33vw;
 }
 
 .flex {
