@@ -843,34 +843,44 @@ a {
 -------------------------*/
 .footer-general {
     color: white;
+    margin-top: 0;
 }
 .first-footer {
     background-color: #33758A;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 23px 49px 0px 109px;
-	gap: 100px
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 23px 49px 0px 109px;
+    gap: 100px;
+    min-height: 500px;
+    margin-top: 30px
+}
+.contact-footer{
+  margin-left: 10%;
 }
 
 .h3-hablamos {
 	font-size: 48px;
 	width: 508px;
 	height: 184px;
+  margin-bottom: 25%;
 }
 .email-footer {
 	width: 294px;
 	height: 18px;
 	font-size: 24px;
+  margin-bottom: 10%;
 }
 .phone-footer {
 	font-size: 24px;
+  width: auto;
+  margin-bottom: 15%;
 }
 .form-footer {
 	display: flex;
 	flex-direction: column;
 	display: block;
-    margin-bottom: 20px
+  margin-bottom: 20px;
 }
 .form-tittle {
 	width: 536px;
@@ -881,21 +891,26 @@ a {
 	width: 306px;
 	height: 39px;
 }
-.input-footer{
+.{
 	width: 482px;
 	height: 32px;
-}/*Second footer
 }
-
-
+.btn-form-footer{
+  display: inline-flex;
+  padding: 7px 89px 0px 72px;
+  align-items: center;
+  border-radius: 80px;
+  background-color: #A8201A;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
 /*Second footer
 -------------------
 */
 .second-footer {
     background-color: #2f4858;
 }
-
-
 
 .rrss-footer {
 	display: flex;
