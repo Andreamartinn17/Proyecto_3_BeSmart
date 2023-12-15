@@ -23,10 +23,11 @@ body{
 
 /* Estilos base */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
 
 body {
   font-family: var(--body-font);
@@ -542,352 +543,153 @@ a {
 /* fin nav header */
 
 
-/*Slider de los valores de empresa*/
-*{
-    margin:0;
+body {
+    margin: 0;
     padding: 0;
+    display: flex;
+    background-color: rgba(51, 101, 138, 0.7); /* RGBA con 70% de opacidad */
+  }
+  
+  .formulario {
+    background-color: #E4DEDE;
+    padding: 20px;
+    width: 500px;
     box-sizing: border-box;
-}
-
-.titulo {
+    margin-top: 125px;
+    height: 425px;
+    border-radius: 5px;
+    margin-left: 60px;
+  }
+  
+  .formulario h2 {
+    color: #333;
     text-align: center;
-    font-size: 40px;
-    padding-top: 180px;
-    color:black;
-
-}
-
-.slider-box{
-    width: 1280px;
-    margin: 50px auto 0;
-    margin-bottom: -200px; /*BORDE DE ABAJO DE LAS SLIDES DE VALORES*/
-    overflow: hidden;
-}
-
-.slider-box ul{
+  }
+  
+  .formulario form {
+    margin-top: 30px;
     display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li{
-    width: 100%;
-    list-style: none;
-    position:relative;
-}
-
-.content-valueslider{
-    position:absolute;
+    flex-direction: column;
+  }
+  
+  .formulario label {
     text-align: center;
-    padding: 0 20px;
-    top: 200px;
-    color:white;
-    border:1px solid black;
-    background: rgba(10, 1, 65, 0.7);
-    margin:0 90px ;
-
-}
-
-.content-valueslider h2{
-    font-size: 45px;
-    margin-bottom: 35px;
-    margin-top: 35px;
-} 
-
-.content-valueslider p{
-    font-size: px;
-    margin-bottom: 35px;
-} 
-
-
-.slider-box img{
-    width: 100%;
-    height: 65%;
-    object-fit: cover;
-}
-@keyframes slide {
-    0% { margin-left: 0;}
-    20% { margin-left: 0;}
-
-    25% { margin-left: -100%;}
-    45% { margin-left: -100%;}
-
-    50% { margin-left: -200%;}
-    70% { margin-left: -200%;}
-
-    75% { margin-left: -300%;}
-    100% { margin-left: -300%;}
-}
-
-
-/*Slider de los valores de empresa/*/
-/*CSS DE MAIN VIDEO*/
-.video_main{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.flexbox-container{
-    border:1px solid black;
-    background: rgba(10, 1, 65, 0.7);
-    padding: 45px;
-    width: 60%;
-    display:flex;
-    flex-direction:column;
-    margin: 0 auto;/*Para centrarlo*/
-    margin-top: 13%;
-}
-
-@media screen and (max-width:768px) {
-    .flexbox-container{
-        margin-top:30%;
-    }
-    
-}
-
-.logo-in-main{
-    width: 60%;
-}
-
-.h_1{
-    color:white;
-    align-self: center;
-    font-weight: bold;
-    font-size:40px;
-    margin-left: 13%;
-}
-
-@media screen and (max-width:768px) {
-    .h_1{
-        font-size: 25px;
-        margin-top: 10%;
-    }
-    
-}
-
-.h_2{
-    color: white;
-    align-self:flex-end;
-    margin-right: 4%;
-}
-
-@media screen and (max-width:768px) {
-    .h_2{
-        font-size: 15px;
-    }
-    
-}
-
-.contacta_button{
-    margin-top: 50px;
-    align-self: center;
-}
-
-.button-main-with-video{
-    color:white;
-    background-color: #F6AE2D;
+    margin-bottom: 8px;
+  }
+  
+  .formulario input,
+  .formulario button {
     padding: 8px;
-    border-radius: 8px;
-    border:0;
-    font-weight: bold;
-    font-size: 16px;
-    cursor:pointer;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
+    margin-bottom: 15px;
+    margin-top: 8px;
+    width: 300px;
+    margin-left: 80px;
 
-.button-main-with-video:hover{
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-@media screen and (max-width:768px) {
-     button{
-        font-size:11px;
-        padding:7px;
-        font-weight:semi-bold;
-    }
-    
-}
-
-/* rama team */
-
-.team {
-  background-color: #191C26;
-  width: 100vw;
-  height: 70vh ;
-  padding: 0; /* Elimina el relleno interno */
-  margin: 0; /* Elimina los márgenes externos */
-  white-space: nowrap; /* Evita el salto de línea en el texto */
-  overflow: hidden; /* Oculta el contenido que excede el contenedor */
-  animation: scroll 50s line infinite; /* Animación de desplazamiento horizontal */
-  position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
-  display: flex; /* Utiliza el modelo de caja flexible */
-  align-items: center; /* Centra los elementos en el eje transversal (vertical) */
-  align-items: flex-end;
-}
-
-/* Elimina márgenes en elementos relacionados con el área de team */
-.content, .content1, .descriptionright {
-  margin: 0;
-  padding: 0;
-}
-
-/* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
-.descriptionright {
-  font-size: 1vw; /* Reducido a la mitad para adaptarse a viewport */
-  line-height: 1.5; /* Ajusta según sea necesario para el espaciado entre líneas */
-  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
-  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
-}
-
-/* Estilo para la clase .content */
-.content {
-    height: 70vh;
-    display: flex;
-}
-
-.heyim {
-    margin-top: 50px;
-    font-size: 25px;
-    text-align: center; 
-    font-weight: bold; 
-    color: #A8201A; 
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-} 
-
-.content1 {
-  background-color: aqua;
-    display: grid;
-    padding: 3vw;
-}
-
-.flex {
-  background-color: #F6AE2D;
-  display: flex;   
-}
-
-.teampicture {
-  align-self: flex-end; /* Alinea las imágenes en la parte inferior del contenedor */
-  margin-top: auto; /* Empuja las imágenes hacia la parte inferior */
-/* Alinea el contenido al final del contenedor */
-}
-
-.profession {
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: center;
-    text-align: left; 
-    font-weight: bold; 
-    color: #A8201A;  
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-    word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
-    white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+  }
+  
+  .formulario button {
+    background-color: #A8201A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px ;
+    margin-left: 160px;
+    border-radius: 4px;
+  }
+  
+  .mapa {
+    flex-grow: 1;
+    margin-left: 650px;
+    margin-top: -425px;
+    border-radius: 10px;
   }
 
-.descriptionright {
-  background-color: #F6AE2D;
-    padding: 1vw;
-    overflow: hidden;
-    border-radius: 7px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
-    color: white;
-    line-height: 1.3em;
-    opacity: 0.8;
+
+  .mapa iframe {
+    border-radius: 10px ;
 }
 
-/* Estilo para la clase .descriptionright dentro de un párrafo */
-.descriptionright p {
-  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
-  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
-}
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+
+/* Estilos específicos para versiones móviles */
+@media only screen and (max-width: 600px) {
+    .mapa {
+      margin-top: 60px;
+      margin-left: -0px;
+      width: 100%; /* Cambia el ancho al 100% para que se ajuste al contenedor */
     }
-    100% {
-        transform: translateX(-100%);
+  
+    .mapa iframe {
+      width: 100%; /* Ajusta el ancho del mapa al 100% */
+      height: 300px; /* Ajusta la altura del mapa según tus necesidades */
     }
-}
+    .formulario{
+        margin-left: -70px;
+        width: 440px;
+    }
+  }
+  
+  
+  /* Estilos específicos para versiones móviles */
 
-
-/*FOOTER-ANDREA
--------------------------*/
-.footer-general {
-    color: white;
-}
-.first-footer {
-    background-color: #33758A;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 23px 49px 0px 109px;
-	gap: 100px
-}
-
-.h3-hablamos {
-	font-size: 48px;
-	width: 508px;
-	height: 184px;
-}
-.email-footer {
-	width: 294px;
-	height: 18px;
-	font-size: 24px;
-}
-.phone-footer {
-	font-size: 24px;
-}
-.form-footer {
-	display: flex;
-	flex-direction: column;
-	display: block;
-    margin-bottom: 20px
-}
-.form-tittle {
-	width: 536px;
-	height: 62px;
-	font-size: 40px;
-}
-.label-footer{
-	width: 306px;
-	height: 39px;
-}
-.input-footer{
-	width: 482px;
-	height: 32px;
-}/*Second footer
-}
-
-
-/*Second footer
--------------------
-*/
-.second-footer {
-    background-color: #2f4858;
-}
+  .message-container {
+    /* Existing styles... */
+    text-align: center; /* Center the text */
+  }
+  
+  .confirmation-message {
+    background-color: #4CAF50; /* Green background color for confirmation */
+    color: #fff; /* White text color */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-top: -475px; /* Adjust the top margin as needed */
+    margin-left: 20px;
+  }
+  
+  .confirmation-message.show {
+    opacity: 1;
+  }
 
 
 
-.rrss-footer {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-start;
-	gap: 60px;
-}
+/* Estilos para dispositivos medianos */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para dispositivos medianos */
+    .mapa {
+        margin-top: 60px;
+        margin-left: -0px;
+        width: 100%; /* Cambia el ancho al 100% para que se ajuste al contenedor */
+      }
+    
+      .mapa iframe {
+        width: 100%; /* Ajusta el ancho del mapa al 100% */
+        height: 300px; /* Ajusta la altura del mapa según tus necesidades */
+      }
+      .formulario{
+          margin-left: -70px;
+          width: 440px;
+      }
+    }
 
-/*final footer
-----------------
-*/
-.final-footer {
-    background-color: #2f4858;
+   /* Estilos específicos para versiones móviles */
+@media only screen and (max-width: 600px) {
+    .content-container1 {
+        max-width: 100%; /* Ajusta según sea necesario */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .formulario {
+        width: 100%; /* Ajusta según sea necesario */
+        margin-left: 0; /* Ajusta según sea necesario */
+    }
+
+    .mapa {
+        width: 100%; /* Ajusta según sea necesario */
+        margin-left: 0; /* Ajusta según sea necesario */
+    }
 }
 
