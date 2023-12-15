@@ -771,35 +771,39 @@ p {
 }
 .first-footer {
     background-color: #33758A;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 23px 49px 0px 109px;
-	gap: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 23px 49px 0px 109px;
+    gap: 100px;
     min-height: 500px;
     margin-top: 30px
 }
 .contact-footer{
+  margin-left: 10%;
 }
 .h3-hablamos {
 	font-size: 48px;
 	width: 510px;
 	height: 184px;
+  margin-bottom: 25%;
 }
 .email-footer {
 	width: 294px;
 	height: 18px;
 	font-size: 24px;
+  margin-bottom: 10%;
 }
 .phone-footer {
 	font-size: 24px;
-    width: auto;
+  width: auto;
+  margin-bottom: 15%;
 }
 .form-footer {
 	display: flex;
 	flex-direction: column;
 	display: block;
-    margin-bottom: 20px
+  margin-bottom: 20px;
 }
 .form-tittle {
 	width: 536px;
