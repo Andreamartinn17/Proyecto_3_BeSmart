@@ -263,7 +263,7 @@ a {
 
 @media only screen and (max-width: 600px) {
   #header-icono {
-    margin-top: 4px;
+    margin-top: -4px;
     margin-left: 5px;
     height: 50px;
     width: 240px;
@@ -515,6 +515,9 @@ a {
 /* Oculta el botón de contacto en dispositivos móviles */
 
 @media screen and (max-width: 768px) {
+  .boton-contacto{
+    display: none;
+  }
   .boton-contacto{
     display: none;
   }
