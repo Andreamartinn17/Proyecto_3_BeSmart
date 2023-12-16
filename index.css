@@ -709,33 +709,57 @@ a {
 
 /* rama team */
 
+/* ofrmatoback ground*/
+.sliderteam {
+/* Estructura Básica CSS */
+  margin: 0;
+  overflow: hidden;
+  background-size: 100% auto;
+}
+
+/* Exclusión del Borde Inferior */
+.sliderteam::before {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Código CSS Completo */
+.sliderteam {
+  animation: waveAnimation 2s infinite;
+}
+
 .team {
-  background-color: #191C26;
   width: 100vw;
   height: 70vh ;
   padding: 0; /* Elimina el relleno interno */
   margin: 0; /* Elimina los márgenes externos */
-  white-space: nowrap; /* Evita el salto de línea en el texto */
+  white-space: wrap; /* Evita el salto de línea en el texto */
   overflow: hidden; /* Oculta el contenido que excede el contenedor */
   animation: scroll 50s line infinite; /* Animación de desplazamiento horizontal */
   position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
-  display: flex; /* Utiliza el modelo de caja flexible */
+  display: inline-flex; /* Utiliza el modelo de caja flexible */
   align-items: center; /* Centra los elementos en el eje transversal (vertical) */
   align-items: flex-end;
 }
 
 /* Elimina márgenes en elementos relacionados con el área de team */
 .content, .content1, .descriptionright {
+  position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
+  display: flex; /* Utiliza el modelo de caja flexible */
   margin: 0;
   padding: 0;
 }
 
 /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
 .descriptionright {
+  background-color: #F6AE2D;
   font-size: 1vw; /* Reducido a la mitad para adaptarse a viewport */
   line-height: 1.5; /* Ajusta según sea necesario para el espaciado entre líneas */
   word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
-  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
 }
 
 /* Estilo para la clase .content */
@@ -754,15 +778,13 @@ a {
 } 
 
 .content1 {
-  background-color: aqua;
   display: grid;
   padding: 3vw;
   width: 33vw;
 }
 
 .flex {
-  background-color: #F6AE2D;
-  display: flex;   
+  display: flex;  
 }
 
 .teampicture {
@@ -770,7 +792,7 @@ a {
   margin-top: auto; /* Empuja las imágenes hacia la parte inferior */
 /* Alinea el contenido al final del contenedor */
 }
-
+ 
 .profession {
     margin-top: 50px;
     font-size: 20px;
@@ -784,7 +806,6 @@ a {
   }
 
 .descriptionright {
-  background-color: #F6AE2D;
     padding: 1vw;
     overflow: hidden;
     border-radius: 7px;
@@ -809,6 +830,30 @@ a {
     }
 }
 
+@keyframes box {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+}
+}
+/* Animación de Olas */
+@keyframes waveAnimation {
+  0% {
+     transform: translateY(0);
+  }
+  50% {
+     transform: translateY(-15px);
+  }
+  100% {
+     transform: translateY(0);
+  }
+}
 
 /*FOOTER-ANDREA
 -------------------------*/
