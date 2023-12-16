@@ -610,7 +610,37 @@ a {
     100% { margin-left: -300%;}
 }
 
+@media (max-width:991px) {
 
+  body{
+    padding:30px;
+  } /*Verificar que no afecte todo*/
+  .slider-box{
+    width:100%;
+  }
+
+  .content-valueslider{
+    position:absolute;
+    text-align: center;
+    padding: 0 20px;
+    top: 20px;
+    margin:0 30px ;
+  }
+  .content-valueslider h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .content-valueslider p{
+    font-size:15px;
+   
+  }
+
+  .slider-box img{
+  height: fit-content;
+
+}
+}
 /*Slider de los valores de empresa/*/
 /*CSS DE MAIN VIDEO*/
 .video_main{
