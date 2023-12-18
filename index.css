@@ -740,103 +740,257 @@ a {
 /* rama team */
 
 .team {
-  background-color: #191C26;
   width: 100vw;
-  height: 70vh ;
-  padding: 0; /* Elimina el relleno interno */
-  margin: 0; /* Elimina los márgenes externos */
-  white-space: nowrap; /* Evita el salto de línea en el texto */
-  overflow: hidden; /* Oculta el contenido que excede el contenedor */
-  animation: scroll 50s line infinite; /* Animación de desplazamiento horizontal */
-  position: relative; /* Permite posicionar elementos hijos relativos a este contenedor */
-  display: flex; /* Utiliza el modelo de caja flexible */
-  align-items: center; /* Centra los elementos en el eje transversal (vertical) */
-  align-items: flex-end;
+  height: 70vh;
+  padding: 0;
+  margin: 0;
+  white-space: wrap; /* No es una propiedad válida, se cambia a 'white-space: nowrap;' */
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
-/* Elimina márgenes en elementos relacionados con el área de team */
-.content, .content1, .descriptionright {
+/* Elimina márgenes en elementos relacionados con el área de 'tam' */
+.content,
+.content1,
+.descriptionright {
+  position: relative;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
 /* Ajusta el espacio alrededor del texto en .descriptionright según sea necesario */
 .descriptionright {
-  font-size: 1vw; /* Reducido a la mitad para adaptarse a viewport */
-  line-height: 1.5; /* Ajusta según sea necesario para el espaciado entre líneas */
-  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
-  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+  font-size: 1vw;
+  line-height: 1.5;
+  word-wrap: break-word; /* Se cambia a 'word-wrap: break-word;' */
 }
 
 /* Estilo para la clase .content */
 .content {
-    height: 70vh;
-    display: flex;
+  height: 70vh;
+  display: flex;
 }
 
+/* Estilo para la clase .heyim */
 .heyim {
-    margin-top: 50px;
-    font-size: 25px;
-    text-align: center; 
-    font-weight: bold; 
-    color: #A8201A; 
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-} 
+  font-size: 25px;
+  text-align: left;
+  font-weight: bold;
+  color: #A8201A;
+  text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac,
+    0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
 
+/* Estilo para la clase .content1 */
 .content1 {
-  background-color: aqua;
-    display: grid;
-    padding: 3vw;
+  display: grid;
+  width: 33vw;
 }
 
+/* Estilo para la clase .flex */
 .flex {
-  background-color: #F6AE2D;
-  display: flex;   
+  align-items: center;
+  display: flex;
 }
 
+/* Estilo para la imagen del equipo */
 .teampicture {
-  align-self: flex-end; /* Alinea las imágenes en la parte inferior del contenedor */
-  margin-top: auto; /* Empuja las imágenes hacia la parte inferior */
-/* Alinea el contenido al final del contenedor */
+  background-color: #33758A;
+  border-radius: 50% 50% 0% 0%;
+  align-self: flex-end;
+  margin-top: auto;
+  padding: 8% 5% 0% 5%;
 }
 
+/* Estilo para la clase .profession */
 .profession {
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: center;
-    text-align: left; 
-    font-weight: bold; 
-    color: #A8201A;  
-    text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
-    word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
-    white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+  /* text-align: left; Se eliminó esta línea ya que se especifica dos veces */
+  font-weight: bold;
+  color: #A8201A;
+  text-shadow: 0 1px 0 #A8201A, 0 2px 0 #A8201A, 0 3px 0 #A8201A, 0 4px 0 #A8201A, 0 5px 0 #acacac,
+    0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+/* Basic styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #D8D8D8;
+}
+
+.descriptionright span {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.descriptionright span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation: a-ltr-after 2s cubic-bezier(.77, 0, .18, 1) forwards;
+  transform: translateX(-101%);
+}
+
+.descriptionright span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  animation: a-ltr-before 2s cubic-bezier(.77, 0, .18, 1) forwards;
+  transform: translateX(0);
+}
+
+.descriptionright span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after {
+  animation-delay: 6s;
+}
+
+.descriptionright span:nth-of-type(2)::before,
+.descriptionright span:nth-of-type(2)::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes a-ltr-after {
+  0% {
+    transform: translateX(-100%);
   }
 
+  100% {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes a-ltr-before {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+/* Estilo para la clase .descriptionright */
 .descriptionright {
-  background-color: #F6AE2D;
-    padding: 1vw;
-    overflow: hidden;
-    border-radius: 7px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19);
-    color: white;
-    line-height: 1.3em;
-    opacity: 0.8;
+  padding: 1vw;
+  overflow: hidden;
 }
 
 /* Estilo para la clase .descriptionright dentro de un párrafo */
 .descriptionright p {
-  word-wrap: break-word; /* Permite la división de palabras para evitar desbordamientos */
-  white-space: pre-line; /* Conserva los saltos de línea y espacios en blanco */
+  word-wrap: break-word;
+  white-space: pre-line;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+
+@media screen and (max-width: 600px) {
+  .team {
+    height: auto;
+    flex-direction: flex;
+  }
+
+  .content,
+  .content1 {
+    width: 100%;
+  }
+
+  .teampicture {
+    margin-top: 20px;
+    padding: 8% 5% 0% 5%;
+    border-radius: 50%; /* Aplica el border-radius para formar un círculo */
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+  }
+
+  .teampicture img {
+    width: 200px;
+    height: 200px;
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    border-radius: 50%; /* Aplica el border-radius para formar un círculo */
+  }
+
+  .descriptionright {
+    display: none; /* Oculta descriptionright en pantallas más pequeñas */
+    margin-top: 20px;
+  }
+
+  /* Estilos para el slider de valores de empresa en dispositivos móviles */
+  .slider-box {
+    width: 100%;
+    margin: 50px auto 0;
+    margin-bottom: -200px; /* Ajusta el margen según sea necesario */
+    overflow: hidden;
+  }
+
+  .slider-box ul {
+    width: 300%; /* Ajusta el ancho según tus necesidades */
+  }
+
+  .slider-box li {
+    width: 93.333%; /* Ajusta el ancho según tus necesidades */
+    list-style: none;
+    position: relative;
+  }
+
+  .content-valueslider {
+    top: 0; /* Ajusta la posición según tus necesidades */
+    padding: 0 0px; /* Ajusta el relleno según tus necesidades */
+  }
+
+  .content-valueslider h2 {
+    font-size: 25px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .content-valueslider p {
+    font-size: 15px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    margin-bottom: 15px;
+  }
+    /* ... Otras reglas de media queries ... */
+  
+    /* Ocultar la sección heyim en dispositivos móviles */
+    .heyim {
+      display: none;
     }
-    100% {
-        transform: translateX(-100%);
+  
+    /* Alinear profession en la parte inferior de la imagen */
+    .profession {
+      text-align: center; /* O ajusta según sea necesario */
+      margin-top: 10px; /* O ajusta según sea necesario */
     }
-}
+  
+    /* Ajustar el tamaño de todas las imágenes */
+    .teampicture img {
+      width: 30vw; /* Hace que todas las imágenes ocupen el 100% del contenedor */
+      height: 30vh; /* Mantiene la proporción original de la imagen */
+      border-radius: 50%; /* Aplica el border-radius para formar un círculo */
+    }
+  }
+
 
 
 /*FOOTER-ANDREA
@@ -845,7 +999,7 @@ a {
     color: white;
 }
 .first-footer {
-    background-color: #33758A;
+  background-color: #33758A;
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
