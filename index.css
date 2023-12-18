@@ -888,19 +888,13 @@ a {
 .input-footer{
 	width: 482px;
 	height: 32px;
-}/*Second footer
 }
-
-
 /*Second footer
 -------------------
 */
 .second-footer {
     background-color: #2f4858;
 }
-
-
-
 .rrss-footer {
 	display: flex;
 	justify-content: flex-end;
@@ -914,4 +908,7 @@ a {
 .final-footer {
     background-color: #2f4858;
 }
-
+.line-footer ´{
+  border-bottom: 5px solid #55DDE0; /* Grosor de 5px y color azul */
+  width: 100%; /* Ocupar todo el ancho de la página */
+}
