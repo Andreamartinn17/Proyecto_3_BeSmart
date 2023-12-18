@@ -1066,19 +1066,12 @@ a {
 */
 .second-footer {
     background-color: #2f4858;
-    padding: 50px 0;
-}
-.second-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .logo-footer{
 
 }
 .img-logo-footer{
-  max-width: 300px;
-  width: 100%;
+
 }
 .rrss-footer {
 	display: flex;
@@ -1104,15 +1097,5 @@ a {
     border-top: 5px solid #55DDE0;
 }
 .copy-footer{
-  padding: 20px 15px;
-  text-align: center;
-}
-.copy-footer span{
-  padding-right: 10px;
-}
-.copy-footer a{
-  color:white;
-  padding: 0 10px;
-  text-decoration: underline;
-
+  
 }

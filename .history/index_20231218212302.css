@@ -1066,19 +1066,15 @@ a {
 */
 .second-footer {
     background-color: #2f4858;
-    padding: 50px 0;
 }
-.second-footer .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .logo-footer{
 
 }
 .img-logo-footer{
-  max-width: 300px;
-  width: 100%;
+
 }
 .rrss-footer {
 	display: flex;
