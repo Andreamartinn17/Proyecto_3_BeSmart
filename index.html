@@ -331,53 +331,56 @@
                 <h4 class="form-tittle">Te contactamos</h4>
                 <form action="/procesar_formulario" method="post">
                     <!-- Campo Nombre y Apellidos -->
-                    <label for="nombre_apellidos">Nombre y Apellidos*</label>
-                    <br>
-                    <input type="text" id="nombre_apellidos" name="nombre_apellidos" required>
-                    <br>
+                    <label class="label-footer" for="nombre_apellidos">Nombre y Apellidos*</label>
+                    
+                    <input class="input-form" type="text" id="nombre_apellidos" name="nombre_apellidos" required>
+                    
                     <!-- Campo Email -->
-                    <label for="email">Email*</label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <br>
+                    <label class="label-footer" for="email">Email*</label>
+                    
+                    <input class="input-form" type="email" id="email" name="email" required>
+                    
                     <!-- Campo Teléfono -->
-                    <label for="telefono">Teléfono</label>
-                    <br>
-                    <input type="tel" id="telefono" name="telefono" required> 
-                    <br>
-                </form>
-                <label class="accept-conditions">
-                    <input class="input-footer" type="checkbox" id="aceptar_terminos" name="aceptar_terminos">
+                    <label class="label-footer" for="telefono">Teléfono</label>
+                    
+                    <input class="input-form" type="tel" id="telefono" name="telefono" required> 
+                    
+                    <label class="label-footer">
+                    <input class="checkbox-form" type="checkbox" id="aceptar_terminos" name="aceptar_terminos">
                     He leído y aceptado la política de privacidad
                     </label>
-                    <br>
                     <button type="submit-form" class="btn-form-footer">Enviar Formulario</button>
+                </form>
+                
             </div> 
         </section>
         <section class="second-footer">
-            <div class="logo-footer">
-                <img class="img-logo-footer" src="Images footer/be_smart_yellow_2.png" alt="logo" width=""/>
-            </div>
-            <div class="rrss-footer">
-                <a href="https://www.linkedin.com/">
-                <img class="images-rrss" src="Images footer/LinkedIn's-Logo.png" alt="linkedin" width="40">
-                </a>
-                <a href="https://www.facebook.com/?locale=es_ES">
-                <img class="images-rrss" src="Images footer/Facebook's-Logo.png" alt="facebook" width="40">
-                </a>
-                <a href="https://www.instagram.com/">
-                <img class="images-rrss" src="Images footer/Instagram's-Logo.png" alt="instagram" width="40">
-                </a>
-            </div>
-            <div class="pymes-footer">
-                <img class="pymes-image" src="Images footer/pyme-logo.png" alt="pyme" width="">
+            <div class="container">
+                <div class="logo-footer">
+                    <img class="img-logo-footer" src="Images footer/be_smart_yellow_2.png" alt="logo" width=""/>
+                </div>
+                <div class="rrss-footer">
+                    <a href="https://www.linkedin.com/">
+                    <img class="images-rrss" src="Images footer/LinkedIn's-Logo.png" alt="linkedin" width="40">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=es_ES">
+                    <img class="images-rrss" src="Images footer/Facebook's-Logo.png" alt="facebook" width="40">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                    <img class="images-rrss" src="Images footer/Instagram's-Logo.png" alt="instagram" width="40">
+                    </a>
+                </div>
+                <div class="pymes-footer">
+                    <img class="pymes-image" src="Images footer/pyme-logo.png" alt="pyme" width="">
+                </div>
             </div>
         </section>
-        <section class="final-footer">
-            <div class="line-footer">
-            </div> 
+        <section class="final-footer"> 
             <div class="copy-footer">
-                <p class="p-final-footer"><u>©2023 BeSmart</u> | <u>Aviso legal</u> | <u>Política de Privacidad</u> | <u>Política de cookies</u></p>
+                <span>©2023 BeSmart</span> |
+                    <a href="#">Aviso legal</a> |
+                    <a href="#">Política de Privacidad </a> | 
+                    <a href="#">Política de cookies</a>
             </div>
         </section> 
     </footer>
