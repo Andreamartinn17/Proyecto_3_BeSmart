@@ -331,27 +331,27 @@
                 <h4 class="form-tittle">Te contactamos</h4>
                 <form action="/procesar_formulario" method="post">
                     <!-- Campo Nombre y Apellidos -->
-                    <label for="nombre_apellidos">Nombre y Apellidos*</label>
-                    <br>
-                    <input type="text" id="nombre_apellidos" name="nombre_apellidos" required>
-                    <br>
+                    <label class="label-footer" for="nombre_apellidos">Nombre y Apellidos*</label>
+                    
+                    <input class="input-form" type="text" id="nombre_apellidos" name="nombre_apellidos" required>
+                    
                     <!-- Campo Email -->
-                    <label for="email">Email*</label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <br>
+                    <label class="label-footer" for="email">Email*</label>
+                    
+                    <input class="input-form" type="email" id="email" name="email" required>
+                    
                     <!-- Campo Teléfono -->
-                    <label for="telefono">Teléfono</label>
-                    <br>
-                    <input type="tel" id="telefono" name="telefono" required> 
-                    <br>
-                </form>
-                <label class="accept-conditions">
-                    <input class="input-footer" type="checkbox" id="aceptar_terminos" name="aceptar_terminos">
+                    <label class="label-footer" for="telefono">Teléfono</label>
+                    
+                    <input class="input-form" type="tel" id="telefono" name="telefono" required> 
+                    
+                    <label class="label-footer">
+                    <input class="checkbox-form" type="checkbox" id="aceptar_terminos" name="aceptar_terminos">
                     He leído y aceptado la política de privacidad
                     </label>
-                    <br>
                     <button type="submit-form" class="btn-form-footer">Enviar Formulario</button>
+                </form>
+                
             </div> 
         </section>
         <section class="second-footer">
