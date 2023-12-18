@@ -1103,15 +1103,10 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .first-footer {
-    padding: 50px 25px;
     flex-direction: column;
   }
   .second-footer .container {
     flex-direction: column;
-    gap: 20px;
-  }
-  .phone-footer {
-    margin-bottom: 0;
   }
 }
 

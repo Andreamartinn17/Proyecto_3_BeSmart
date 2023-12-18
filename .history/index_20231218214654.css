@@ -1110,8 +1110,6 @@ a {
     flex-direction: column;
     gap: 20px;
   }
-  .phone-footer {
-    margin-bottom: 0;
-  }
+  
 }
 

@@ -1006,6 +1006,7 @@ a {
 	padding: 50px 49px 30px 109px;
 	gap: 100px
 }
+
 .h3-hablamos {
 	font-size: 48px;
 	max-width: 508px;
@@ -1101,17 +1102,3 @@ a {
   padding: 0 10px;
   text-decoration: underline;
 }
-@media screen and (max-width: 1024px) {
-  .first-footer {
-    padding: 50px 25px;
-    flex-direction: column;
-  }
-  .second-footer .container {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .phone-footer {
-    margin-bottom: 0;
-  }
-}
-
