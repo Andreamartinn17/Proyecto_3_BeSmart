@@ -610,7 +610,7 @@ a {
     100% { margin-left: -300%;}
 }
 
-@media (max-width:991px) {
+@media (max-width:768px) {
 
   body{
     padding:30px;
@@ -637,7 +637,8 @@ a {
   }
 
   .slider-box img{
-  height: fit-content;
+  max-width: 100%;
+  height: auto;
 
 }
 }
@@ -675,7 +676,7 @@ a {
     width: 60%;
 }
 
-.h_1{
+.title-in-main{
     color:white;
     align-self: center;
     font-weight: bold;
@@ -684,14 +685,14 @@ a {
 }
 
 @media screen and (max-width:768px) {
-    .h_1{
+    .title-in-main{
         font-size: 25px;
         margin-top: 10%;
     }
     
 }
 
-.h_2{
+.subtitle-in-main{
     color: white;
     align-self:flex-end;
     margin-right: 4%;
