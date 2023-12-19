@@ -60,37 +60,3 @@ const removeDropdownStyles = () => {
 };
 
 // Eliminar estilos al cargar la página y al cambiar el tamaño de la ventana
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('form');
-  const messageContainer = document.querySelector('.message-container');
-
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    // Display a confirmation message with styling
-    showMessage('Gracias. Pronto contactaremos contigo');
-
-    // Reset the form after submission if needed
-    form.reset();
-  });
-
-  function showMessage(message) {
-    // Create a message element with a specific class
-    const messageElement = document.createElement('div');
-    messageElement.className = 'message confirmation-message show'; // Add 'show' class
-
-    // Set the message content
-    messageElement.textContent = message;
-
-    // Append the message to the container
-    messageContainer.innerHTML = '';
-    messageContainer.appendChild(messageElement);
-
-    // Optionally, you can hide the message after a few seconds
-    setTimeout(function () {
-      messageContainer.innerHTML = '';
-    }, 5000); // Adjust the time (in milliseconds) as needed
-  }
-});

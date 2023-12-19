@@ -607,30 +607,9 @@ body {
 
 
   .mapa iframe {
-    border-radius: 10px ;
-}
-
-
-
-/* Estilos específicos para versiones móviles */
-@media only screen and (max-width: 600px) {
-    .mapa {
-      margin-top: 60px;
-      margin-left: -0px;
-      width: 100%; /* Cambia el ancho al 100% para que se ajuste al contenedor */
-    }
-  
-    .mapa iframe {
-      width: 100%; /* Ajusta el ancho del mapa al 100% */
-      height: 300px; /* Ajusta la altura del mapa según tus necesidades */
-    }
-    .formulario{
-        margin-left: -70px;
-        width: 440px;
-    }
-  }
-  
-  
+    border-radius: 10px;
+    height: 430px;
+} 
   /* Estilos específicos para versiones móviles */
 
   .message-container {
@@ -692,4 +671,100 @@ body {
         margin-left: 0; /* Ajusta según sea necesario */
     }
 }
+
+.final-footer {
+  background-color: #2f4858;
+  border-top: 5px solid #55DDE0;
+}
+.copy-footer{
+padding: 20px 15px;
+text-align: center;
+}
+.copy-footer span{
+padding-right: 0px;
+}
+.copy-footer a{
+color:white;
+padding: 0 10px;
+text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+.first-footer {
+  padding: 50px 25px;
+  flex-direction: column;
+}
+.second-footer .container {
+  flex-direction: column;
+  gap: 20px;
+}
+.phone-footer {
+  margin-bottom: 0;
+}
+}
+body {
+  overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+/* Estilos específicos para versiones móviles */
+@media only screen and (max-width: 600px) {
+  .content-container1 {
+      max-width: 100%; /* Ajusta según sea necesario */
+      margin: 0 auto; /* Centra el contenido */
+  }
+
+  .formulario {
+      width: 100%; /* Ajusta según sea necesario */
+      margin-left: 0; /* Ajusta según sea necesario */
+  }
+
+  .mapa {
+      width: 100%; /* Ajusta según sea necesario */
+      margin-left: 0; /* Ajusta según sea necesario */
+  }
+}
+
+
+/* Estilos específicos para versiones móviles */
+@media only screen and (max-width: 600px) {
+  .mapa {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .mapa iframe {
+      width: 100%;
+      height: 300px; /* Ajusta la altura según sea necesario */
+  }
+}
+
+/* Estilos específicos para versiones móviles */
+@media only screen and (max-width: 600px) {
+  .mapa {
+      margin-top: 0; /* Ajusta según sea necesario */
+      margin-left: 0; /* Ajusta según sea necesario */
+  }
+}
+
+/* Estilos específicos para versiones móviles */
+@media only screen and (max-width: 600px) {
+  .mapa {
+      display: block; /* Ajusta según sea necesario */
+      margin-bottom: 10%;
+      margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width: 1117px) {
+  
+  footer{
+    margin-top: 2%;
+    margin-right: -10%;
+  }
+  .nav__menu{
+    margin-right: -10%;
+  }
+}
+
+
+
 

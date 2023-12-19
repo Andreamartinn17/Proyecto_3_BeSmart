@@ -471,6 +471,12 @@ transform: rotate(90deg);
    display: none;
   }
 }
+@media only screen and (min-width: 1117px) {
+  
+  .nav__menu{
+    margin-right: -10%;
+  }
+}
 
 
 /* fin nav header */
