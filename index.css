@@ -596,7 +596,6 @@ a {
 } 
 
 .content-valueslider p{
-    font-size: px;
     margin-bottom: 35px;
 } 
 
@@ -637,19 +636,23 @@ a {
     margin:0 30px ;
   }
   .content-valueslider h2{
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   .content-valueslider p{
-    font-size:15px;
+    font-size:10px;
+    display: flex;
+    align-content: center;
    
   }
 
-  .slider-box img{
+ .slider-box img{
   height: fit-content;
 
 }
+
 }
 /*Slider de los valores de empresa/*/
 /*CSS DE MAIN VIDEO*/
@@ -947,39 +950,7 @@ a {
     margin-top: 20px;
   }
 
-  /* Estilos para el slider de valores de empresa en dispositivos móviles */
-  .slider-box {
-    width: 100%;
-    margin: 50px auto 0;
-    margin-bottom: -200px; /* Ajusta el margen según sea necesario */
-    overflow: hidden;
-  }
 
-  .slider-box ul {
-    width: 300%; /* Ajusta el ancho según tus necesidades */
-  }
-
-  .slider-box li {
-    width: 93.333%; /* Ajusta el ancho según tus necesidades */
-    list-style: none;
-    position: relative;
-  }
-
-  .content-valueslider {
-    top: 0; /* Ajusta la posición según tus necesidades */
-    padding: 0 0px; /* Ajusta el relleno según tus necesidades */
-  }
-
-  .content-valueslider h2 {
-    font-size: 25px; /* Ajusta el tamaño de la fuente según tus necesidades */
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-
-  .content-valueslider p {
-    font-size: 15px; /* Ajusta el tamaño de la fuente según tus necesidades */
-    margin-bottom: 15px;
-  }
     /* ... Otras reglas de media queries ... */
   
     /* Ocultar la sección heyim en dispositivos móviles */
