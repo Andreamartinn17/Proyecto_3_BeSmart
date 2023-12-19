@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document Configuration -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>BeSmart</title>
+    <!-- Navigation Header -->
+    <!-- Link to Remix icon font -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Link to CSS Stylesheet -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="content-container">
+        <!-- Header -->
+        <header class="header">
+            <!-- Main Navigation -->
+            <nav class="nav container">
+                <!-- Logo and Navigation Icon -->
+                <div class="nav__data">
+                    <a href="http://127.0.0.1:5501/index.html" class="nav__logo">
+                        <i class="ri-code-s-slash-line"></i> <img src="./img header/smart-correcto.png" alt="icon" id="header-icono">
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <div class="nav__toggle" id="nav-toggle"> 
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!-- Empty Menu Item -->
+                        <li>
+                            <a href="#section-sliders"  class="nav__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#team" class="nav__link">Team</a>
+                        </li>
+                        <!-- Additional Menu Items -->
+                        <li>
+                            <a href="#budget" class="nav__link">Budget</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5501/contactoingles.html" class="boton-contacto"><h6>Contact</h6></a>
+                        </li>
+                        <!-- Additional Menu Container (Countries) -->
+                        <nav class="fondo-paises">
+                            <ul>
+                                <li><a href="#"><img src="./img header/banderausa.png" alt="" id="bandera-principal"></a>
+                                    <ul>
+                                        <li><a href="http://127.0.0.1:5501/index.html"><img src="./img header/españa.png" alt="" id="tamaño-paises"></a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- End Navigation Header -->
+
+        <!-- JavaScript Script -->
+        <script src="./js.js"></script>
+
+        <section class="main-with-video">
+            <video autoplay muted loop class="video_main">
+                <source src="imagenes/vídeo_main.mp4" type="video/mp4">
+            </video>
+            <section class="flexbox-container">
+                <div class="logo-in-main">
+                    <img src="imagenes/logo_mini_yellow2.png" alt="logo be smart">
+                </div>
+                <div class="h_1">
+                    TECHNOLOGICAL SOLUTIONS
+                </div>
+                <div class="h_2">
+                    From Local to Large Scale.
+                </div>
+                <div class="contacta_button">
+                    <button class="button-main-with-video">Contact Us ></button>
+                </div>
+            </section>
+
+            <!-- Section Sliders -->
+            <h2 id="section-sliders" class="titulo">OUR VALUES</h2>
+            <div class="slider-box">
+                <ul>
+                    <!-- Slide 1 -->
+                    <li>
+                        <img src="imagenes/compromiso.png" alt="">
+                        <div class="content-valueslider">
+                            <h2>COMMITMENT TO THE LOCAL COMMUNITY</h2>
+                            <p>
+                                We aim to strengthen the local business network by building strong ties, supporting community events and activities, and contributing to technological progress that benefits everyone.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Slide 2 -->
+                    <li>
+                        <img src="imagenes/personalizado.png" alt="">
+                        <div class="content-valueslider">
+                            <h2>ADAPTABILITY AND CUSTOMIZATION</h2>
+                            <p>
+                                We strive to be flexible in our approach, ensuring that each solution is a precise response to the specific challenges and goals of each business.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Slide 3 -->
+                    <li>
+                        <img src="imagenes/educacion2.png" alt="">
+                        <div class="content-valueslider">
+                            <h2>EDUCATION AND TRANSPARENCY</h2>
+                            <p>
+                                We commit to educating and empowering our local clients, providing clear and transparent information about our solutions and processes.
+                            </p>
+                        </div>
+                    </li>
+                    <!-- Duplicate of Slide 3 -->
+                    <li>
+                        <img src="imagenes/educacion2.png" alt="">
+                        <div class="content-valueslider">
+                            <h2>EDUCATION AND TRANSPARENCY</h2>
+                            <p>
+                                We commit to educating and empowering our local clients, providing clear and transparent information about our solutions and processes.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Section Sliders -->
+
+            <!-- Team Section -->
+            <main id="team" class="sliderteam">
+                <section class="team">
+                    <!-- Background class -->
+                    <script>
+                        // Function for automatic scrolling
+                        function autoScroll() {
+                            const teamContainer = document.querySelector('.team');
+                            const scrollAmount = 50; // Adjust scroll speed as needed
+
+                            // Scroll horizontally
+                            teamContainer.scrollLeft += scrollAmount;
+
+                            // If it reaches the end, restart from the beginning
+                            if (teamContainer.scrollLeft >= teamContainer.scrollWidth - teamContainer.clientWidth) {
+                                teamContainer.scrollLeft = 0;
+                            }
+                        }
+                        // Set an interval to call the autoScroll function
+                        setInterval(autoScroll, 1000); // Adjust the interval as needed (in milliseconds)
+                    </script>
+
+                    <!-- Project Owner -->
+                    <article class="content">
+                        <div class="flex">
+                            <img class="teampicture" src="./img_team/projectowner.png" alt="project owner image">
+                            <div class="content1">
+                                <aside class="profession">
+                                    <div class="heyim">
+                                        <h1>HELLO I'M KRISTY</h1>
+                                    </div>
+                                    <h2>PROJECT OWNER</h2>
+                                </aside>
+                                <aside class="descriptionright">
+                                    <p><span>
+                                        Imagine I'm the chef of a restaurant, but instead of creating dishes, I design digital experiences that will make users lick their fingers. My day-to-day involves balancing customer needs with the development team's vision.
+                                        It's like playing Tetris with requirements and features!
+                                    </span></p>
+                                </aside>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Scrum Master -->
+                    <article class="content">
+                        <div class="flex">
+                            <img class="teampicture" src="./img_team/scrummaster.png" alt="scrum master image">
+                            <div class="content1">
+                                <div class="heyim">
+                                    <h1>HELLO I'M ANDREA</h1>
+                                </div>
+                                <aside class="profession">
+                                    <h2>SCRUM MASTER</h2>
+                                </aside>
+                                <aside class="descriptionright">
+                                    <p><span>
+                                        Imagine I'm the chef of a restaurant, but instead of creating dishes, I design digital experiences that will make users lick their fingers. My day-to-day involves balancing customer needs with the development team's vision.
+                                        It's like playing Tetris with requirements and features!
+                                    </span></p>
+                                </aside>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Graphic Designer -->
+                    <article class="content">
+                        <div class="flex">
+                            <img class="teampicture" src="./img_team/diseñográfico.png" alt="graphic designer image">
+                            <div class="content1">
+                                <div class="heyim">
+                                    <h1>HELLO I'M ANTONIA</h1>
+                                </div>
+                                <aside class="profession">
+                                    <h2>GRAPHIC DESIGNER</h2>
+                                </aside>
+                                <aside class="descriptionright">
+                                    <p><span>
+                                        Imagine I'm the chef of a restaurant, but instead of creating dishes, I design digital experiences that will make users lick their fingers. My day-to-day involves balancing customer needs with the development team's vision.
+                                        It's like playing Tetris with requirements and features!
+                                    </span></p>
+                                </aside>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Front-end Developer -->
+                    <article class="content">
+                        <div class="flex">
+                            <img class="teampicture" src="./img_team/frondend.png" alt="front-end developer image">
+                            <div class="content1">
+                                <div class="heyim">
+                                    <h1>HELLO I'M BEA</h1>
+                                </div>
+                                <aside class="profession">
+                                    <h2>FRONT-END DEVELOPER</h2>
+                                </aside>
+                                <aside class="descriptionright">
+                                    <p><span>
+                                        Imagine I'm the chef of a restaurant, but instead of creating dishes, I design digital experiences that will make users lick their fingers. My day-to-day involves balancing customer needs with the development team's vision.
+                                        It's like playing Tetris with requirements and features!
+                                    </span></p>
+                                </aside>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Back-end Developer -->
+                    <article class="content">
+                        <div class="flex">
+                            <img class="teampicture" src="./img_team/backend.png" alt="back-end developer image">
+                            <div class="content1">
+                                <div class="heyim">
+                                    <h1>HELLO I'M TRIANA</h1>
+                                </div>
+                                <aside class="profession">
+                                    <h2>BACK-END DEVELOPER</h2>
+                                </aside>
+                                <aside class="descriptionright">
+                                    <p><span>
+                                        Imagine I'm the chef of a restaurant, but instead of creating dishes, I design digital experiences that will make users lick their fingers. My day-to-day involves balancing customer needs with the development team's vision.
+                                        It's like playing Tetris with requirements and features!
+                                    </span></p>
+                                </aside>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+            <!-- End Team Section -->
+
+            <!-- Footer -->
+           <!-- FOOTER-->
+<footer class="footer-general">
+    <section class="first-footer">
+        <div class="contact-footer">
+            <h3 class="h3-talk">You are just one click away from improving your online business. Shall we talk?</h3>
+            <p class="email-footer">hello@besmart.com</p>
+            <p class="phone-footer">900 123 456</p> 
+        </div>
+        <div id="budget" class="form-footer">
+            <h4 class="form-title">Contact Us</h4>
+            <form action="/process_form" method="post">
+                <!-- Name and Surname Field -->
+                <label class="label-footer" for="name_surname">Name and Surname*</label>
+                <input class="input-form" type="text" id="name_surname" name="name_surname" required>
+                <!-- Email Field -->
+                <label class="label-footer" for="email">Email*</label>
+                <input class="input-form" type="email" id="email" name="email" required>
+                <!-- Phone Field -->
+                <label class="label-footer" for="phone">Phone</label>
+                <input class="input-form" type="tel" id="phone" name="phone" required> 
+                <label class="label-footer">
+                    <input class="checkbox-form" type="checkbox" id="accept_terms" name="accept_terms">
+                    I have read and accepted the privacy policy
+                </label>
+                <button type="submit" class="btn-form-footer">Submit Form</button>
+            </form>
+        </div> 
+    </section>
+    <section class="second-footer">
+        <div class="container">
+            <div class="logo-footer">
+                <img class="img-logo-footer" src="Images footer/be_smart_yellow_2.png" alt="logo" width=""/>
+            </div>
+            <div class="rrss-footer">
+                <a href="https://www.linkedin.com/">
+                <img class="images-rrss" src="Images footer/LinkedIn's-Logo.png" alt="linkedin" width="40">
+                </a>
+                <a href="https://www.facebook.com/?locale=en_US">
+                <img class="images-rrss" src="Images footer/Facebook's-Logo.png" alt="facebook" width="40">
+                </a>
+                <a href="https://www.instagram.com/">
+                <img class="images-rrss" src="Images footer/Instagram's-Logo.png" alt="instagram" width="40">
+                </a>
+            </div>
+            <div class="pymes-footer">
+                <img class="pymes-image" src="Images footer/pyme-logo.png" alt="pyme" width="">
+            </div>
+        </div>
+    </section>
+    <section class="final-footer"> 
+        <div class="copy-footer">
+            <span>©2023 BeSmart</span> |
+                <a href="#">Legal Notice</a> |
+                <a href="#">Privacy Policy </a> | 
+                <a href="#">Cookie Policy</a>
+        </div>
+    </section> 
+</footer>
+</body>
+</html>
