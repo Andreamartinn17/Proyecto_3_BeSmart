@@ -537,8 +537,7 @@ transform: rotate(90deg);
 } 
 
 .content-valueslider p{
-  font-size: px;
-  margin-bottom: 35px;
+    margin-bottom: 35px;
 } 
 
 
@@ -570,27 +569,31 @@ body{
   width:100%;
 }
 
-.content-valueslider{
-  position:absolute;
-  text-align: center;
-  padding: 0 20px;
-  top: 20px;
-  margin:0 30px ;
-}
-.content-valueslider h2{
-  font-size: 25px;
-  margin-bottom: 15px;
+  .content-valueslider{
+    position:absolute;
+    text-align: center;
+    padding: 0 20px;
+    top: 20px;
+    margin:0 30px ;
+  }
+  .content-valueslider h2{
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .content-valueslider p{
+    font-size:10px;
+    display: flex;
+    align-content: center;
+   
+  }
+
+ .slider-box img{
+  height: fit-content;
+
 }
 
-.content-valueslider p{
-  font-size:15px;
- 
-}
-
-.slider-box img{
-height: fit-content;
-
-}
 }
 /*Slider de los valores de empresa/*/
 /*CSS DE MAIN VIDEO*/
@@ -888,66 +891,67 @@ white-space: pre-line;
   margin-top: 20px;
 }
 
-/* Estilos para el slider de valores de empresa en dispositivos móviles */
-.slider-box {
-  width: 100%;
-  margin: 50px auto 0;
-  margin-bottom: -200px; /* Ajusta el margen según sea necesario */
-  overflow: hidden;
-}
-
-.slider-box ul {
-  width: 300%; /* Ajusta el ancho según tus necesidades */
-}
-
-.slider-box li {
-  width: 93.333%; /* Ajusta el ancho según tus necesidades */
-  list-style: none;
-  position: relative;
-}
-
-.content-valueslider {
-  top: 0; /* Ajusta la posición según tus necesidades */
-  padding: 0 0px; /* Ajusta el relleno según tus necesidades */
-}
-
-.content-valueslider h2 {
-  font-size: 25px; /* Ajusta el tamaño de la fuente según tus necesidades */
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.content-valueslider p {
-  font-size: 15px; /* Ajusta el tamaño de la fuente según tus necesidades */
-  margin-bottom: 15px;
-}
-  /* ... Otras reglas de media queries ... */
-
-  /* Ocultar la sección heyim en dispositivos móviles */
-  .heyim {
-    display: none;
+  /* Estilos para el slider de valores de empresa en dispositivos móviles */
+  .slider-box {
+    width: 100%;
+    margin: 50px auto 0;
+    margin-bottom: -200px; /* Ajusta el margen según sea necesario */
+    overflow: hidden;
   }
 
-  /* Alinear profession en la parte inferior de la imagen */
-  .profession {
-    text-align: center; /* O ajusta según sea necesario */
-    margin-top: 10px; /* O ajusta según sea necesario */
+  .slider-box ul {
+    width: 300%; /* Ajusta el ancho según tus necesidades */
   }
 
-  /* Ajustar el tamaño de todas las imágenes */
-  .teampicture img {
-    width: 30vw; /* Hace que todas las imágenes ocupen el 100% del contenedor */
-    height: 30vh; /* Mantiene la proporción original de la imagen */
-    border-radius: 50%; /* Aplica el border-radius para formar un círculo */
+  .slider-box li {
+    width: 93.333%; /* Ajusta el ancho según tus necesidades */
+    list-style: none;
+    position: relative;
   }
-}
+
+  .content-valueslider {
+    top: 0; /* Ajusta la posición según tus necesidades */
+    padding: 0 0px; /* Ajusta el relleno según tus necesidades */
+  }
+
+  .content-valueslider h2 {
+    font-size: 25px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .content-valueslider p {
+    font-size: 15px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    margin-bottom: 15px;
+  }
+    /* ... Otras reglas de media queries ... */
+  
+    /* Ocultar la sección heyim en dispositivos móviles */
+    .heyim {
+      display: none;
+    }
+  
+    /* Alinear profession en la parte inferior de la imagen */
+    .profession {
+      text-align: center; /* O ajusta según sea necesario */
+      margin-top: 10px; /* O ajusta según sea necesario */
+    }
+  
+    /* Ajustar el tamaño de todas las imágenes */
+    .teampicture img {
+      width: 30vw; /* Hace que todas las imágenes ocupen el 100% del contenedor */
+      height: 30vh; /* Mantiene la proporción original de la imagen */
+      border-radius: 50%; /* Aplica el border-radius para formar un círculo */
+    }
+  }
 
 
 
 /*FOOTER-ANDREA
 -------------------------*/
 .footer-general {
-  color: white;
+    color: white;
+    margin-top: 0;
 }
 .first-footer {
 background-color: #33758A;
